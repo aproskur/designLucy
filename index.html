@@ -8,63 +8,105 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
-    <title>Designer Lucy Web Page</title>
+    <title>Дизайнер художник иллюстратор Людмила Степашина</title>
 </head>
 
 <body>
 
 
-  <nav class="navbar navbar-expand-md my-4 navbar-light bg-white">
-    <div class="container">
+<nav class="navbar navbar-expand-md navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+      <img class="img-responsive" src="images/exlibris_Stepashina.png" id="exlibrisNavbrand" alt="Экслибрис">
+    </a>
+    <h1 id="designer_name">
+        Людмила Степашина<br>
+        дизайнер-иллюстратор
+    </h1>
 
-            <a class="navbar-brand" href="#">
-              <img src="images/signature_bold.png" id="navlogo" alt="Людмила Степашина подпись">
-            </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" id="menuButton">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" id="menuButton">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-          <div class="navbar-collapse collapse justify-content-between" id="navbarContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"> Главная </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Работы &nbsp </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Обо мне &nbsp </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Услуги </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Контакты </a>
-                </li>
-              </ul>
-          </div>
-
-
-
+    <div class="navbar-collapse collapse justify-content-between" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> Главная </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Работы &nbsp; </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Обо мне &nbsp; </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Услуги </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Контакты </a>
+          </li>
+        </ul>
     </div>
-  </nav>
+</nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col text-center my-5">
-          <img src="/images/exlibris_Stepashina.png" id="exlibris_main" class="img-fluid max-width: 100%" alt="Логотип Степашина Людмила">
-        </div>
-        <div  class="col-12 text-center my-3">
-          <p id="mainphrase">Творческий и внимательный подход к Вашему заказу</p>
-        </div>
-        <div class="col-12 text-center">
-          <img src="/images/arrow-down-3101.png" alt="Стрелка, указывающая вниз, чтобы прокрутить страницу ниже">
-        </div>
+
+
+<div id="lucysWorksCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#lucysWorksCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#lucysWorksCarousel" data-slide-to="1"></li>
+    <li data-target="#lucysWorksCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img  class="d-block w-100 img-responsive" src="images/baseCyr.jpg" alt="First slide">
+      <div class="carousel-caption">
+        <h4>Фирменный стиль</h4>
       </div>
     </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/Prime_Esthetic.jpg" alt="Second slide">
+      <div class="carousel-caption">
+        <h4>Полиграфия</h4>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/BusinesscardInterpreter.jpg" alt="Third slide">
+      <div class="carousel-caption">
+        <h4>Иллюстрация</h4>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
 
-    <div class="container">
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div  class="col-12 text-center my-3">
+        <p id="mainphrase">Творческий и внимательный подход к Вашему заказу</p>
+      </div>
+      <!--
+      <div class="col-12 text-center">
+        <img src="/images/arrow-down-3101.png" alt="Стрелка, указывающая вниз, чтобы прокрутить страницу ниже">
+      </div> -->
+    </div>
+  </div>
+
+
+
+
+<div class="container">
       <div class="row">
         <div class="col-12 col-md-6">
           <div class="card">
@@ -73,7 +115,7 @@
               <div class="card-title">
                 <h4>Фирменный стиль</h4>
                 <div class="card-text">Рассказ про фирменный стиль
-                  А также акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов. 
+                  А также акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов.
                 </div>
               </div>
             </div>
