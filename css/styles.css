@@ -1,22 +1,69 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-
-.navbar-brand {
-  margin: 0 auto;  /*make it in the centre on small screens*/
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0);
 }
+
+@media only screen and (max-width: 576px) {
+  .navbar {
+    background-color: white;
+    max-height: 22vh;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  #work_samples_carousel img{
+    width: 100%;
+    height: 78vh;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #designer_name {
+    font-family: "Playfair display", sans-serif;
+    font-size: 10em;
+  }
+}
+
+@media only screen and (max-width: 431px){
+  #designer_name {
+    font-family: "Playfair display", sans-serif;
+    font-size: 0.2em;
+    padding: 5px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width:431px) {
+  #exlibrisNavbrand {
+    width: 70px;
+    max-height: 15vh;
+  }
+
+}
+
+
+
 
 #exlibrisNavbrand {
   max-width: 150px;
-  height: 20vh;
+  max-height: 20vh;
 }
 
 #designer_name {
   font-family: "Playfair display", sans-serif;
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 1.5rem;
   padding: 25px;
-  text-align: left;
+  text-align: center;
+}
+
+#designer_name p{
+  font-size: 1.3rem;
+
 }
 
 #navbarContent {
@@ -25,29 +72,32 @@
   white-space: nowrap;
 }
 
-#jumbo {
-  background-color: white;
-}
-
 
 #mainphrase {
   font-family: "Playfair display", sans-serif;
   font-size: 33px;
 }
 
-
-#lucysWorksCarousel img {
+/*
+#work_samples_carousel img {
   width: 100%;
   max-height: 78vh;
 }
+*/
+
+.carousel-item {
+
+    height: 100vh;
 
 
+}
 
-#lucysWorksCarousel h4 {
+
+#work_samples_carousel h4 {
   font-family: "Playfair display", sans-serif;
 }
 
-#lucysWorksCarousel p {
+#work_samples_carousel p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
