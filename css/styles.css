@@ -44,6 +44,12 @@
 
   }
 
+  .carousel-item {
+
+      height: 100vh;
+  }
+
+
 
 @media only screen and (max-width: 768px) {
   .navbar {
@@ -62,13 +68,23 @@
   }
 
   #designer_name h1 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   #designer_name h2 {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
 
+}
+
+@media only screen and (max-width: 768px) {
+  #designer_name h1 {
+    font-size: 4.5vw;
+  }
+
+  #designer_name h2 {
+    font-size: 4vw;
+  }
 }
 
 
@@ -87,12 +103,6 @@
 }
 */
 
-.carousel-item {
-
-    height: 100vh;
-
-
-}
 
 
 #work_samples_carousel h4 {
