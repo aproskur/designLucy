@@ -7,7 +7,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <title>Дизайнер художник иллюстратор Людмила Степашина</title>
 </head>
 
@@ -17,13 +18,13 @@
 <header>
 <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">
-      <img class="img-responsive" src="images/exlibris_Stepashina.png" id="exlibris_navbrand" alt="Экслибрис">
+      <div class="zoom-brand">
+        <img class="img-responsive" src="images/exlibris_Stepashina.png" id="exlibris_navbrand" alt="Экслибрис">
+      </div>
     </a>
     <div id="designer_name">
-    <h1>
-        Людмила&nbsp;Степашина<br>
-    </h1>
-  <h2>дизайнер&nbsp;иллюстратор</h2>
+    <h1>Людмила&nbsp;Степашина<br></h1>
+    <h2>дизайнер&nbsp;иллюстратор</h2>
   </div>
 
 
@@ -59,24 +60,48 @@
     <li data-target="#work_samples_carousel" data-slide-to="0" class="active"></li>
     <li data-target="#work_samples_carousel" data-slide-to="1"></li>
     <li data-target="#work_samples_carousel" data-slide-to="2"></li>
+    <li data-target="#work_samples_carousel" data-slide-to="3"></li>
+    <li data-target="#work_samples_carousel" data-slide-to="4"></li>
+    <li data-target="#work_samples_carousel" data-slide-to="5"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img  class="d-block w-100 img-responsive" src="images/baseCyr.jpg" alt="First slide">
+      <picture>
+       <source media="(max-width: 768px)" srcset="images/imagesXS/cat.jpg" >
+       <img src="images/slider_1.jpg" class="d-block w-100" alt="Пример работы Людмилы">
+     </picture>
       <div class="carousel-caption">
         <h4>Фирменный стиль</h4>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/Prime_Esthetic.jpg" alt="Second slide">
+      <img class="d-block w-100 img-fluid" src="images/slider_2.jpg" alt="Пример работы Людмилы">
       <div class="carousel-caption">
         <h4>Полиграфия</h4>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/BusinesscardInterpreter.jpg" alt="Third slide">
+      <img class="d-block w-100 img-fluid" src="images/slider_3.jpg" alt="Пример работы Людмилы">
       <div class="carousel-caption">
         <h4>Иллюстрация</h4>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="images/slider_4.jpg" alt="Пример работы Людмилы">
+      <div class="carousel-caption">
+        <h4>Заголовок</h4>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class ="d-block w-100 img-fluid" src="images/slider_5.jpg" alt="Пример работы Людмилы">
+      <div class="carousel-caption">
+        <h4>Заголовок</h4>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="images/slider_6.jpg" alt="Пример работы Людмилы">
+      <div class="carousel-caption">
+        <h4>Заголовок</h4>
       </div>
     </div>
   </div>
@@ -107,6 +132,11 @@
     </div>
   </div>
 
+  <!-- ... existing HTML ... -->
+
+<div id="like_button_container"></div>
+<!-- ... existing HTML ... -->
+
 
 
 
@@ -114,7 +144,9 @@
       <div class="row">
         <div class="col-12 col-md-6">
           <div class="card">
-            <img src="/images/baseCyr.jpg" class="card-img-top" alt="Пример работы в области фирменного стиля">
+            <div class="card-image-zoom">
+              <img src="/images/baseCyr.jpg" class="card-img-top" alt="Пример работы в области фирменного стиля">
+            </div>
             <div class="card-body">
               <div class="card-title">
                 <h4>Фирменный стиль</h4>
@@ -127,7 +159,9 @@
         </div>
         <div class="col-12 col-md-6">
           <div class="card">
-            <img src="/images/Prime_Esthetic.jpg" class="card-img-top" alt="Пример работы в области полиграфии">
+            <div class="card-image-zoom">
+              <img src="/images/Prime_Esthetic.jpg" class="card-img-top" alt="Пример работы в области полиграфии">
+            </div>
             <div class="card-body">
               <div class="card-title">
                 <h4>Полиграфия</h4>
@@ -143,7 +177,9 @@
       <div class="row">
         <div class="col-12">
           <div class="card">
-            <img src="/images/BusinesscardInterpreter.jpg" class=card-img-top alt="Пример работы в области иллюстрации">
+            <div class="card-image-zoom">
+              <img src="/images/BusinesscardInterpreter.jpg" class=card-img-top alt="Пример работы в области иллюстрации">
+            </div>
             <div class="card-body">
               <div class="card-title">
                 <h4>Иллюстрация</h4>
@@ -160,13 +196,56 @@
 
 
 
-<footer>
+<footer class="footer">
+  <div class="container">
+    <div class="row row-content">
+      <div class="col-sm-3 col-md-2 mt-3">
+        <div id="footer-image-container" class="zoom-brand">
+        <a href="#"><img src="images/exlibris_Stepashina.png" alt="Экслибрис художника"></a>
+       </div>
+      </div>
+      <div class="col-sm-3 col-md-3 align-self-center mt-3">
+        <ul id="footer-menu" class="list-unstyled">
+            <li><a class="footer-link" href="#">Мои&nbsp;работы</a></li>
+            <li><a class="footer-link" href="#">Услуги</a></li>
+            <li><a class="footer-link" href="#">Обо&nbsp;мне</a></li>
+            <li><a class="footer-link" href="contact.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 col-md-4 mt-3 align-self-center">
+        <div id="footer-action-call">
+          <p> Творческий и внимательний подход к вашему заказу </p>
+          <a id="btn-footer-action-call" class="btn btn-light" href="#" role=button>Обсудить заказ</a>
+        </div>
+      </div>
+      <div id="footer-social-icons" class="col-sm-2 col-md-3 align-self-center mt-3">
+        <a class="btn btn-social-icon btn-facebook" href="#"><i class="fa fa-facebook fa-lg" ></i></a>
+        <a class="btn btn-social-icon btn-instagram" href="#"><i class="fa fa-instagram fa-lg"></i></a>
+        <a class="btn btn-social-icon btn-pinterest" href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+        <a class="btn btn-social-icon btn-whatsapp" href="#"><i class="fa fa-whatsapp fa-lg" style="color:green"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="footer-copyright" class="col mr-5 mt-3">
+      <p>&copy;Все права защищены 2020</p>
+    </div>
+
+  </div>
 </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/js/script.js"></script>
+
+
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
 </body>
 
 </html>
