@@ -34,9 +34,6 @@
 
     <div class="navbar-collapse collapse justify-content-between" id="navbarContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"> Главная </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="#"> Работы &nbsp; </a>
           </li>
@@ -67,14 +64,22 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <picture>
-       <source media="(max-width: 768px)" srcset="images/imagesXS/cat.jpg" >
+      <source media="(min-width: 667px)" srcset="images/slider_1.jpg">
+      <source media="(min-width: 400px)" srcset="images/imagesM/1_2.png">
+      <source media="(min-width: 320px)" srcset="images/imagesS/1.png">
        <img src="images/slider_1.jpg" class="d-block w-100" alt="Пример работы Людмилы">
-     </picture>
+      </picture>
       <div class="carousel-caption">
         <h4>Фирменный стиль</h4>
       </div>
     </div>
     <div class="carousel-item">
+      <picture>
+        <source media="(min-width: 667px)" srcset="images/slider_2.jpg">
+       <source media="(min-width: 400px)" srcset="images/imagesM/2_2.png" >
+       <source media="(min-width: 320px)" srcset="images/imagesS/2.png" >
+       <img src="images/slider_2.jpg" class="d-block w-100" alt="Пример работы Людмилы">
+      </picture>
       <img class="d-block w-100 img-fluid" src="images/slider_2.jpg" alt="Пример работы Людмилы">
       <div class="carousel-caption">
         <h4>Полиграфия</h4>

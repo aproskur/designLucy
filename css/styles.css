@@ -23,10 +23,38 @@
   max-height: 10em;
 }
 
-@media only screen and (max-width: 493px){
+.navbarbrand {
+  margin: 0;
+}
+
+
+
+@media only screen and (min-width: 250px){
+  #exlibris_navbrand {
+    max-width: 4.8em;
+    max-height: 5em;
+  }
+}
+
+
+@media only screen and (min-width: 493px){
   #exlibris_navbrand {
     max-width: 6em;
     max-height: 8em;
+  }
+}
+
+@media only screen and (min-width: 414px){
+  #exlibris_navbrand {
+    max-width: 6em;
+    max-height: 8em;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  #exlibris_navbrand {
+    max-width: 8em;
+    max-height: 10em;
   }
 }
 
@@ -58,7 +86,6 @@
 
 @media only screen and (max-width: 494px) {
 
-
   #designer_name {
     font-family: "Playfair display", sans-serif;
     font-weight: 700;
@@ -73,8 +100,26 @@
     font-size: 1rem;
 
   }
-
 }
+
+@media only screen and (max-width: 320px) {
+
+  #designer_name {
+    font-family: "Playfair display", sans-serif;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  #designer_name h1 {
+    font-size: 0.8rem;
+  }
+
+  #designer_name h2 {
+    font-size: 0.7rem;
+
+  }
+}
+
 
 #navbarContent {
   font-family: "Montserrat", sans-serif;
