@@ -3,19 +3,26 @@
 
 .body{
   font-size: 100%;
+  height: 100%;
 }
 
-.navbar {
+
+
+#contact-body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url("/images/autumn.jpg");
+  background-size: cover;
+}
+
+
+#navbar-main {
   position: absolute;
   width: 100%;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0);
 }
 
-@media only screen and (max-width: 493px){
-  .navbar {
-  }
-}
 
 #exlibris_navbrand {
 
@@ -115,7 +122,7 @@
   }
 
   #designer_name h2 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
   }
 }
@@ -128,10 +135,11 @@
 }
 
 
-
+backgorund_nav
 .carousel-item {
     height: 100vh;
 }
+
 
 .w-100 {
   width: 100%;
@@ -196,11 +204,18 @@
   font-weight: 400;
 }
 
+#brands-customers img {
+  padding: 5px;
+  width: 150px;
+}
+
+#brands-customers h3 {
+  font-family: "Playfair display", sans-serif;
+  text-align: center;
+}
+
 .footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: lightgrey;
+  background: lightgrey;ytgyh
   font-family: "Montserrat", sans-serif;
 }
 
@@ -217,7 +232,10 @@
   max-width: 8em;
   max-height:8.2em;
 }
-
+{}
+#footer-copyright {
+  font-size: 0.8em;
+}
 
 #footer-menu {
   font-family: "Montserrat", sans-serif;
@@ -261,7 +279,7 @@
 }
 #btn-footer-action-call{
   font-family: "Playfair display", sans-serif;
-}
+}images/autumn
 
 #footer-social-icons{
   margin: 0.35em 0;
@@ -277,13 +295,15 @@
   }
 }
 
-#footer-copyright {
-  text-align: right;
+
+#contact-main h4 {
+  font-family: "Playfair display", sans-serif;
 }
 
-@media only screen and (max-width: 992px){
-#footer-copyright {
-  text-align: center;
-  font-size: 0.75rem;
-  }
+#contact-main label button link {
+  font-family: "Montserrat", sans-serif;
+}
+
+#contact-main {
+  color:white;
 }

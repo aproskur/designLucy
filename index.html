@@ -16,40 +16,44 @@
 
 
 <header>
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">
-      <div class="zoom-brand">
-        <img class="img-responsive" src="images/exlibris_Stepashina.png" id="exlibris_navbrand" alt="Экслибрис">
+
+<!--navbar starts-->
+<nav id="navbar-main" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="zoom-brand">
+          <img class="img-responsive" src="images/exlibris_Stepashina.png" id="exlibris_navbrand" alt="Экслибрис" />
+        </div>
+      </a>
+      <div id="designer_name">
+      <h1>Людмила&nbsp;Степашина<br></h1>
+      <h2>дизайнер&nbsp;иллюстратор</h2>
+    </div>
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" id="menuButton">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse justify-content-between" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Работы &nbsp; </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Обо мне &nbsp; </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Услуги </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"> Контакты </a>
+            </li>
+          </ul>
       </div>
-    </a>
-    <div id="designer_name">
-    <h1>Людмила&nbsp;Степашина<br></h1>
-    <h2>дизайнер&nbsp;иллюстратор</h2>
-  </div>
-
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" id="menuButton">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="navbar-collapse collapse justify-content-between" id="navbarContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Работы &nbsp; </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Обо мне &nbsp; </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Услуги </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Контакты </a>
-          </li>
-        </ul>
     </div>
 </nav>
-
+<!--navbar ends-->
 
 
 <div id="work_samples_carousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -64,9 +68,10 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <picture>
-      <source media="(min-width: 667px)" srcset="images/slider_1.jpg">
-      <source media="(min-width: 400px)" srcset="images/imagesM/1_2.png">
-      <source media="(min-width: 320px)" srcset="images/imagesS/1.png">
+       <source media="(min-width: 871px)" srcset="images/slider_1.jpg">
+       <source media="(min-width: 667px)" srcset="images/imagesM/768-х-1024_exlibris.png">
+       <source media="(min-width: 370px)" srcset="images/imagesS/375-х-812_exlibris.png">
+       <source media="(min-width: 320px)" srcset="images/imagesXS/1.png">
        <img src="images/slider_1.jpg" class="d-block w-100" alt="Пример работы Людмилы">
       </picture>
       <div class="carousel-caption">
@@ -75,12 +80,12 @@
     </div>
     <div class="carousel-item">
       <picture>
-        <source media="(min-width: 667px)" srcset="images/slider_2.jpg">
-       <source media="(min-width: 400px)" srcset="images/imagesM/2_2.png" >
-       <source media="(min-width: 320px)" srcset="images/imagesS/2.png" >
-       <img src="images/slider_2.jpg" class="d-block w-100" alt="Пример работы Людмилы">
+        <source media="(min-width: 871px)" srcset="images/slider_2.jpg">
+        <source media="(min-width: 667px)" srcset="images/imagesM/768-х-1024_zaichik.png">
+        <source media="(min-width: 370px)" srcset="images/imagesS/375-х-812_zaichik.png">
+        <source media="(min-width: 320px)" srcset="images/imagesXS/2.png">
+       <img src="images/slider_2.jpg" class="d-block w-100 img-fluid" alt="Пример работы Людмилы">
       </picture>
-      <img class="d-block w-100 img-fluid" src="images/slider_2.jpg" alt="Пример работы Людмилы">
       <div class="carousel-caption">
         <h4>Полиграфия</h4>
       </div>
@@ -125,10 +130,10 @@
 
 
 
-  <div class="container">
+  <div class="container py-4">
     <div class="row">
       <div  class="col-12 text-center my-3">
-        <p id="mainphrase">Творческий и внимательный подход к Вашему заказу</p>
+        <h2 id="mainphrase">Творческий и внимательный подход к Вашему заказу</h2>
       </div>
       <!--
       <div class="col-12 text-center">
@@ -145,31 +150,16 @@
 
 
 
-<div class="container">
-      <div class="row">
+<section class="container">
+      <div class="row mb-3">
         <div class="col-12 col-md-6">
           <div class="card">
             <div class="card-image-zoom">
-              <img src="/images/baseCyr.jpg" class="card-img-top" alt="Пример работы в области фирменного стиля">
+              <img src="/images/poligrafia.png" class="card-img-top" alt="Пример работы в области полиграфии"/>
             </div>
             <div class="card-body">
               <div class="card-title">
-                <h4>Фирменный стиль</h4>
-                <div class="card-text">Рассказ про фирменный стиль
-                  А также акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="card">
-            <div class="card-image-zoom">
-              <img src="/images/Prime_Esthetic.jpg" class="card-img-top" alt="Пример работы в области полиграфии">
-            </div>
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Полиграфия</h4>
+                <h3 class="mt-3">Полиграфия</h3>
                 <div class="card-text">
                   Рассказ про полиграфию
                   А также акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов.
@@ -178,16 +168,32 @@
             </div>
           </div>
         </div>
+        <div class="col-12 col-md-6">
+          <div class="card">
+            <div class="card-image-zoom">
+              <img src="/images/firmenniy_stil.png" class="card-img-top" alt="Пример работы в области фирменного стиля"/>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="mt-3">Фирменный стиль</h3>
+                <div class="card-text">Рассказ про фирменный стиль
+                  А также акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="row">
         <div class="col-12">
           <div class="card">
             <div class="card-image-zoom">
-              <img src="/images/BusinesscardInterpreter.jpg" class=card-img-top alt="Пример работы в области иллюстрации">
+              <img src="/images/illustracia.png" class=card-img-top alt="Пример работы в области иллюстрации"/>
             </div>
             <div class="card-body">
               <div class="card-title">
-                <h4>Иллюстрация</h4>
+                <h3 class="mt-3 mb-2">Иллюстрация</h3>
                 <div class="card-text">
                   Рассказ про иллюстрацию
                   А также акционеры крупнейших компаний набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов.
@@ -197,16 +203,57 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
+    <section id="brands-customers" class="container my-5">
+      <div class="row">
+        <div class="col">
+           <h3 class="my-5">Бренды, с которыми я работаю</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./images/logo_banzai.png" alt="логотип банзай">
+        </div>
+        <div class="col">
+          <img src="./images/logo_ds.png" alt="логотип дс">
+        </div>
+        <div class="col">
+          <img src="./images/logo_frezia.png" alt="логотип фрезия">
+        </div>
+        <div class="col">
+          <img src="./images/logo_clipso.png" alt="логотип клипсо">
+        </div>
+        <div class="col">
+          <img src="./images/logo_laina.png" alt="логотип лайна">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./images/logo_rieker.png" alt="логотип рикер">
+        </div>
+        <div class="col">
+          <img src="./images/logo_severstal.png" alt="логотип Северсталь метиз">
+        </div>
+        <div class="col">
+          <img src="./images/logo_sheksna.png" alt="логотип шексна">
+        </div>
+        <div class="col">
+          <img src="./images/logo_spasskie_vorota.png" alt="логотип спасские ворота">
+        </div>
+        <div class="col">
+          <img src="./images/logo_teci_rus.png" alt="логотип течи рус">
+        </div>
+      </div>
+    </section>
 
 <footer class="footer">
   <div class="container">
-    <div class="row row-content">
+    <div class="row">
       <div class="col-sm-3 col-md-2 mt-3">
         <div id="footer-image-container" class="zoom-brand">
-        <a href="#"><img src="images/exlibris_Stepashina.png" alt="Экслибрис художника"></a>
+        <a href="#"><img src="images/exlibris_Stepashina.png" alt="Экслибрис художника"/></a>
        </div>
       </div>
       <div class="col-sm-3 col-md-3 align-self-center mt-3">
@@ -220,7 +267,7 @@
       <div class="col-sm-4 col-md-4 mt-3 align-self-center">
         <div id="footer-action-call">
           <p> Творческий и внимательний подход к вашему заказу </p>
-          <a id="btn-footer-action-call" class="btn btn-light" href="#" role=button>Обсудить заказ</a>
+          <a id="btn-footer-action-call" class="btn btn-light" href="contact.html" role=button>Обсудить заказ</a>
         </div>
       </div>
       <div id="footer-social-icons" class="col-sm-2 col-md-3 align-self-center mt-3">
@@ -230,13 +277,12 @@
         <a class="btn btn-social-icon btn-whatsapp" href="#"><i class="fa fa-whatsapp fa-lg" style="color:green"></i></a>
       </div>
     </div>
-  </div>
   <div class="row">
-    <div id="footer-copyright" class="col mr-5 mt-3">
-      <p>&copy;Все права защищены 2020</p>
+    <div id="footer-copyright" class="col my-3">
+      <p class="text-center">&copy;Все права защищены 2020</p>
     </div>
-
   </div>
+</div>
 </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

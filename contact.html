@@ -8,9 +8,130 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <title>Дизайнер художник иллюстратор Людмила Степашина</title>
 </head>
 
-<body>
-  
+<body id="contact-body">
+
+
+  <!--navbar starts-->
+  <nav id="navbar-contact-page" class="navbar navbar-expand-lg navbar-light" id="navbar-contact-page">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="zoom-brand">
+            <img class="img-responsive" src="images/exlibris_Stepashina.png" id="exlibris_navbrand" alt="Экслибрис">
+          </div>
+        </a>
+        <div id="designer_name">
+        <h1>Людмила&nbsp;Степашина<br></h1>
+        <h2>дизайнер&nbsp;иллюстратор</h2>
+      </div>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" id="menuButton">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse justify-content-between" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> Главная &nbsp; </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Работы &nbsp; </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Обо мне &nbsp; </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Услуги </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#"> Контакты </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+  </nav>
+  <!--navbar ends-->
+
+
+  <main id="contact-main" class="container py-5">
+    <h1 class="sr-only">Контакты</h1>
+    <div class="row">
+      <div class="col-md">
+          <h4 class="mb-3" style="color:white">Отправьте мне сообщение</h4>
+          <form id="contact-form" action="thankyou.html" method="post">
+            <div class="form-group">
+              <label for="fullName">Имя</label>
+              <input type="text" class="form-control" id="fullName" required name="fullName"/>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" required name="email"/>
+            </div>
+            <div class="form-group">
+              <label for="message">Текст сообщения</label>
+              <textarea class="form-control" id="message" rows="3" required name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background:#1f618d; border-color:#1f618d">Отправить</button>
+          </form>
+
+      </div>
+      <div class="col-md">
+        <img class="img-fluid" src="./images/art_paint.jp" alt="">
+      </div>
+
+
+    </div>
+  </main>
+
+
+  <footer class="footer" id="contact-footer">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-sm-3 col-md-2">
+          <div id="footer-image-container" class="zoom-brand">
+          <a href="#"><img src="images/exlibris_Stepashina.png" alt="Экслибрис художника"/></a>
+         </div>
+        </div>
+        <div class="col-sm-3 col-md-3 align-self-center">
+          <ul id="footer-menu" class="list-unstyled">
+              <li><a class="footer-link" href="#">Мои&nbsp;работы</a></li>
+              <li><a class="footer-link" href="#">Услуги</a></li>
+              <li><a class="footer-link" href="#">Обо&nbsp;мне</a></li>
+              <li><a class="footer-link" href="contact.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 col-md-4 align-self-center">
+          <div id="footer-action-call">
+            <p> Творческий и внимательний подход к вашему заказу </p>
+          </div>
+        </div>
+        <div id="footer-social-icons" class="col-sm-2 col-md-3 align-self-center">
+          <a href="https://instagram.com/designer_lusy"><i class="fa fa-instagram fa-fw fa-2x" style="color:#000000;"></i></a>
+          <a href="https://facebook.com/"><i class="fa fa-whatsapp fa-fw fa-2x" style="color:#000000;"></i></a>
+          <a href="https://facebook.com/"><i class="fa fa-facebook fa-fw fa-2x" style="color:#000000;"></i></a>
+          <a href="https://pinterest.com/"><i class="fa fa-pinterest fa-fw fa-2x"style="color:#000000;"></i></a>
+          </div>
+      </div>
+
+
+    <div class="row">
+      <div id="footer-copyright" class="col my-3">
+        <p class="text-right">&copy;Все права защищены 2020</p>
+      </div>
+    </div>
+  </div>
+  </footer>
+
+      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="/js/script.js"></script>
+
 </body>
+</html>
