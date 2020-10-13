@@ -9,7 +9,7 @@
 
 
 
-#contact-body, html {
+#contact-body {
   height: 100%;
   margin: 0;
   background-image: url("/images/autumn.jpg");
@@ -330,7 +330,7 @@
 }
 
 .footer {
-  background: lightgrey;ytgyh
+  background: lightgrey;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -347,7 +347,8 @@
   max-width: 8em;
   max-height:8.2em;
 }
-{}
+
+
 #footer-copyright {
   font-size: 0.8em;
 }
@@ -369,11 +370,6 @@
   color: black;
 }
 
-/*
-.footer-link:visited {
-  color: grey;
-}
-*/
 
 .footer-link:hover {
   color: red;
@@ -394,7 +390,7 @@
 }
 #btn-footer-action-call{
   font-family: "Playfair display", sans-serif;
-}images/autumn
+}
 
 #footer-social-icons{
   margin: 0.35em 0;
