@@ -1,18 +1,14 @@
-$(function() {  
-    // Toggle Nav on Click
-    $('.toggle-nav').click(function() {
-        // Calling a function in case you want to expand upon this.
-        toggleNav();
-    });
+$("[data-trigger]").on("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    var offcanvas_id =  $(this).attr('data-trigger');
+    $(offcanvas_id).toggleClass("show");
+    $('body').toggleClass("offcanvas-active");
+    $(".screen-overlay").toggleClass("show");
 });
 
-function toggleNav() {
-    if ($('#site-wrapper').hasClass('show-nav')) {
-        // Do things on Nav Close
-        $('#site-wrapper').removeClass('show-nav');
-    } else {
-        // Do things on Nav Open
-        $('#site-wrapper').addClass('show-nav');
-    }
-    //$('#site-wrapper').toggleClass('show-nav');
-}
+$(".btn-close, .screen-overlay").click(function(e){
+    $(".screen-overlay").removeClass("show");
+    $(".mobile-offcanvas").removeClass("show");
+    $("body").removeClass("offcanvas-active");
+});

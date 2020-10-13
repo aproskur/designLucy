@@ -43,18 +43,77 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     white-space: nowrap;
-    background-color: rgba(189, 195, 199, 0.5);
+    background-color: rgba(255, 246, 143, 0.9);
+
 
   }
 
   .navbar-light .navbar-nav .nav-link {
     color: black;
+    font-size: 1.3rem;
   }
 }
 
 
-#exlibris_navbrand {
+.offcanvas-header{ display:none; }
+.screen-overlay {
+  height: 100%;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity:0;
+  visibility:hidden;
+  background-color: rgba(34, 34, 34, 0.6);
+  transition:opacity .2s linear, visibility .1s, width 1s ease-in;
+}
+.screen-overlay.show {
+  transition:opacity .5s ease, width 0s;
+  opacity:1;
+  width:100%;
+  visibility:visible;
+}
 
+
+#offcanvas-logo{
+  max-width: 8em;
+  max-height: 10em;
+}
+
+
+@media all and (max-width:992px) {
+
+ .offcanvas-header{ display:block; }
+
+ .mobile-offcanvas{
+    visibility: hidden;
+    transform:translateX(-100%);
+    border-radius:0;
+    display:block;
+    position: fixed;
+    top: 0; left:0;
+    height: 100%;
+    z-index: 1200;
+    width:65%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+  }
+
+  .mobile-offcanvas.show{
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+  }
+}
+
+
+
+
+#exlibris_navbrand {
   max-width: 8em;
   max-height: 10em;
 }
@@ -67,8 +126,8 @@
 
 @media only screen and (min-width: 250px){
   #exlibris_navbrand {
-    max-width: 4.8em;
-    max-height: 5em;
+    max-width: 6em;
+    max-height: 8em;
   }
 }
 
@@ -113,6 +172,7 @@
   text-align: center;
 }
 
+
 #designer_name h1 {
   font-size: 1.5rem;
 }
@@ -122,9 +182,15 @@
 }
 
 
+@media only screen and (max-width: 493px){
+  #designer_name h1 {
+      font-size: 1.3rem;
+  }
 
-
-
+  #designer_name h2  {
+    font-size: 1rem;
+  }
+}
 
 
 
