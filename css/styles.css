@@ -14,6 +14,7 @@
   margin: 0;
   background-image: url("/images/autumn.jpg");
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -23,6 +24,32 @@
   width: 100%;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0);
+}
+
+
+.navbar-collapse {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+@media only screen and (max-width: 991px) {
+
+  .navbar-collapse {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+    background-color: rgba(189, 195, 199, 0.5);
+
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+  }
 }
 
 
@@ -79,6 +106,7 @@
   transform: scale(1.2);
 }
 
+
 #designer_name {
   font-family: "Playfair display", sans-serif;
   font-weight: 700;
@@ -93,50 +121,19 @@
   font-size: 1.25rem;
 }
 
-@media only screen and (max-width: 494px) {
 
-  #designer_name {
-    font-family: "Playfair display", sans-serif;
-    font-weight: 700;
-    text-align: left;
-  }
 
-  #designer_name h1 {
-    font-size: 1rem;
-  }
 
-  #designer_name h2 {
-    font-size: 1rem;
 
-  }
+
+
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: black;
 }
-
-@media only screen and (max-width: 320px) {
-
-  #designer_name {
-    font-family: "Playfair display", sans-serif;
-    font-weight: 700;
-    text-align: left;
-  }
-
-  #designer_name h1 {
-    font-size: 0.8rem;
-  }
-
-  #designer_name h2 {
-    font-size: 0.8rem;
-
-  }
-}
-
-
-#navbarContent {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  white-space: nowrap;
-}
-
-
 
 .carousel-item {
     height: 100vh;
