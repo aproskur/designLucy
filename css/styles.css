@@ -9,6 +9,8 @@
 
 
 
+
+
 #contact-body {
   height: 100%;
   margin: 0;
@@ -76,8 +78,8 @@
 
 
 #offcanvas-logo{
-  max-width: 8em;
-  max-height: 10em;
+  max-width: 8rem;
+  max-height: 10rem;
 }
 
 
@@ -93,22 +95,22 @@
 
 @media only screen and (min-width: 493px){
   #offcanvas-logo {
-    max-width: 6em;
-    max-height: 8em;
+    max-width: 6rem;
+    max-height: 8rem;
   }
 }
 
 @media only screen and (min-width: 414px){
   #offcanvas-logo {
-    max-width: 6em;
-    max-height: 8em;
+    max-width: 6rem;
+    max-height: 8rem;
   }
 }
 
 @media only screen and (min-width: 768px){
   #exlibris_navbrand {
-    max-width: 8em;
-    max-height: 10em;
+    max-width: 8rem;
+    max-height: 10rem;
   }
 }
 
@@ -153,8 +155,8 @@
 
 
 #exlibris_navbrand {
-  max-width: 8em;
-  max-height: 10em;
+  max-width: 8rem;
+  max-height: 10rem;
 }
 
 .navbarbrand {
@@ -173,22 +175,21 @@
 
 @media only screen and (min-width: 493px){
   #exlibris_navbrand {
-    max-width: 6em;
-    max-height: 8em;
+    max-width: 6rem;
+    max-height: 8rem;
   }
 }
 
 @media only screen and (min-width: 414px){
   #exlibris_navbrand {
-    max-width: 6em;
-    max-height: 8em;
+    max-width: 6rem;
+    max-height: 8rem;
   }
 }
-
 @media only screen and (min-width: 768px){
   #exlibris_navbrand {
-    max-width: 8em;
-    max-height: 10em;
+    max-width: 8rem;
+    max-height: 10rem;
   }
 }
 
