@@ -7,10 +7,6 @@
   padding-top: 50px;
 }
 
-
-
-
-
 #contact-body {
   height: 100%;
   margin: 0;
@@ -19,7 +15,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 #navbar-main {
   position: absolute;
@@ -39,6 +34,10 @@
   color: black;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ff652f;
+}
+
 @media only screen and (max-width: 991px) {
 
   .navbar-collapse {
@@ -50,10 +49,6 @@
 
   }
 
-  .navbar-light .navbar-nav .nav-link {
-    color: black;
-    font-size: 1.3rem;
-  }
 }
 
 
@@ -67,10 +62,10 @@
   opacity:0;
   visibility:hidden;
   background-color: rgba(34, 34, 34, 0.6);
-  transition:opacity .2s linear, visibility .1s, width 1s ease-in;
+  transition: opacity .2s linear, visibility .1s, width 1s ease-in;
 }
 .screen-overlay.show {
-  transition:opacity .5s ease, width 0s;
+  transition: opacity .5s ease, width 0s;
   opacity:1;
   width:100%;
   visibility:visible;
@@ -114,14 +109,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
 @media all and (max-width:992px) {
 
  .offcanvas-header{ display:block; }
@@ -135,9 +122,8 @@
     top: 0; left:0;
     height: 100%;
     z-index: 1200;
-    width:65%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    width: 75%;
+    overflow: hidden;
     transition: visibility .2s ease-in-out, transform .2s ease-in-out;
   }
 
@@ -146,8 +132,10 @@
     transform: translateX(0);
   }
 
-  .navbar-nav .nav-link {
+  .navbar-light .navbar-nav .nav-link {
     padding: 10px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
   }
 }
 
@@ -373,7 +361,8 @@
 
 
 .footer-link:hover {
-  color: red;
+  color: #ff652f;
+  text-decoration: none;
 }
 
 #footer-action-call {

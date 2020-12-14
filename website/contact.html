@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" integrity="sha512-sopmFEmRVsWt542K+yzH3FQ1KJfdosOJG+bGLs9ZJT07b/3gUxRA9ICuJg2JtoZ9WeknAUuwJ0ggnmrV1YL6kQ==" crossorigin="anonymous" />
+  <!--  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+       <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"> -->
+
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <title>Дизайнер художник иллюстратор Людмила Степашина</title>
 </head>
 
@@ -82,6 +88,11 @@
               <label for="message">Текст сообщения</label>
               <textarea class="form-control" id="message" rows="3" required name="message"></textarea>
             </div>
+            <button class="btn btn-primary g-recaptcha" style="background:#1f618d; border-color:#1f618d"
+                    data-sitekey="reCAPTCHA_site_key"
+                    data-callback='onSubmit'
+                    data-action='submit'>Submit</button>
+
             <button type="submit" class="btn btn-primary" style="background:#1f618d; border-color:#1f618d">Отправить</button>
           </form>
       </div>
@@ -129,10 +140,17 @@
   </div>
   </footer>
 
-      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+,<!--      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
       <script src="js/navbar_offcanvas.js"></script>
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+
 
 </body>
 </html>
