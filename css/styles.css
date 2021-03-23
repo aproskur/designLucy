@@ -111,7 +111,7 @@
 
 
 @media only screen and (min-width: 250px){
-  #offcanvas-logo {
+  #offcanvas-logo {#6699cc;
     max-width: 5rem;
     max-height: 5rem;
   }
@@ -348,7 +348,7 @@
 .card-image-zoom:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
+  transform: scale(1.1);#6699cc;
 }
 
 .card-img-top {
@@ -471,5 +471,38 @@
 
 .btn-look-carefully {
   background-color: lightgrey;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.btn-look-carefully_bold {
+  background-color: lightgrey;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.btn-look-carefully_background {
+  background-color: #6699cc;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+
+}
+
+.btn-look-carefully_background_bold {
+  background-color: #6699cc;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+
+}
+
+.styled-link {
+  font-family: "Montserrat", sans-serif;
+  color: #6699cc;
+}
+
+.styled-link-bold {
+  font-family: "Montserrat", sans-serif;
+  color: #6699cc;
+  font-weight: bold;
 }
