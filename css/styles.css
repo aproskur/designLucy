@@ -488,12 +488,16 @@
 
 }
 
-.btn-look-carefully_background_bold {
+.btn-look-carefully-background-bold {
   background-color: #6699cc;
   font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: bold;
+}
 
+.btn-look-carefully-background-bold:hover {
+  font-weight: normal;
+  color: white;
 }
 
 .styled-link {
@@ -505,4 +509,19 @@
   font-family: "Montserrat", sans-serif;
   color: #6699cc;
   font-weight: bold;
+}
+
+.custom-heading {
+  color: white;
+  font-family: "Playfair display", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+
+.custom-paragraph {
+  color: white;
+  font-family: "Montesrrat", sans-serif;
+  font-size: 1.25rem;
+
 }
