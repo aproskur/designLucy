@@ -80,7 +80,7 @@
 .customized-dropdown-link:hover {
   color: #6699cc;
   text-decoration: none;
-}
+}color: #6699cc;
 
 .offcanvas-header{ display:none; }
 .screen-overlay {
@@ -272,6 +272,13 @@
 
 .customized-breadcrumb {
   background-color: white;
+}
+.customized-breadcrumb .breadcrumb-item a, li {
+ font-family: "Montserrat", sans-serif;
+}
+
+.customized-breadcrumb .breadcrumb-item a {
+  color: #6699cc;
 }
 
 .customized-link {
