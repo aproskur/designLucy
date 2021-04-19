@@ -270,6 +270,10 @@
   }
 }
 
+.breadcrumb li:not(:first-child)::before {
+  content: "|";
+}
+
 .customized-breadcrumb {
   background-color: white;
 }
