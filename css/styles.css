@@ -218,6 +218,7 @@
   }
 }
 
+
 .zoom-brand {
   width: 100%;
   height: 100%;
@@ -225,10 +226,12 @@
 }
 
 .zoom-brand:hover {
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
+
+
 
 
 #designer_name {
@@ -346,10 +349,12 @@
 }
 
 .card-image-zoom:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);#6699cc;
 }
+
+
 
 .card-img-top {
   width: 100%;
@@ -516,6 +521,8 @@
   font-family: "Playfair display", sans-serif;
   font-weight: bold;
   font-size: 2rem;
+  margin-top: 60px;
+  line-height: 1.35;
 
 }
 
@@ -524,4 +531,13 @@
   font-family: "Montesrrat", sans-serif;
   font-size: 1.25rem;
 
+
+}
+
+.contact-card {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.75rem;
+  white-space: nowrap;
+  line-height: 0.75;
 }
