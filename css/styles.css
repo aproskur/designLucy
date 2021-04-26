@@ -552,3 +552,24 @@
   white-space: nowrap;
   line-height: 0.75;
 }
+
+@media only screen and (max-width: 500px) {
+
+  .custom-heading {
+    color: white;
+    font-family: "Playfair display", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 60px;
+    line-height: 1.35;
+
+  }
+
+  .contact-card {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    line-height: 0.75;
+
+  }
