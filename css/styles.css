@@ -508,11 +508,11 @@
   background-color: #6699cc;
   font-family: "Montserrat", sans-serif;
   color: white;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .btn-look-carefully-background-bold:hover {
-  font-weight: normal;
+  font-weight: bold;
   color: white;
 }
 
