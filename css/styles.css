@@ -9,7 +9,7 @@
 
 .aboutme {
   font-family: "Montserrat", sans-serif;
-  line-height: 1.6;
+  line-height: 1.8;
   align: justify;
 }
 
@@ -22,7 +22,9 @@
   text-decoration: none;
 }
 
-
+.portrait-about {
+  height: 700px;
+}
 
 #contact-body {
   height: 100%;
