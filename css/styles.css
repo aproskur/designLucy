@@ -19,6 +19,16 @@
   line-height: 1.8;
 }
 
+.services-link {
+  color: #6699cc;
+}
+
+.services-link:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #6699cc;
+}
+
 .link-about {
   color: inherit;
 }
@@ -306,6 +316,10 @@
 
 .customized-breadcrumb .breadcrumb-item a {
   color: #6699cc;
+}
+
+.services-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .customized-link {
