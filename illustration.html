@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
     <title>Иллюстрация портфолио</title>
 
 
@@ -83,9 +85,9 @@
   </div>
 
   <div class="card-columns">
-   <div class="card illustration-card" id="card1"><img class="card-img illustration-img" data-toggle="modal" data-target="#i-modal-1" src="images/masonry_layout/illustration_1.png" alt="Card image"></div>
-   <div class="card illustration-card" id="card2"><img class="card-img illustration-img" src="images/masonry_layout/illustration_2.png" alt="Card image"></div>
-   <div class="card illustration-card" id="card3"><img class="card-img illustration-img" src="images/masonry_layout/illustration_3.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card1"><img class="card-img illustration-img" data-toggle="modal" data-target="#i-modal" src="images/masonry_layout/illustration_1.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card2"><img class="card-img illustration-img" data-toggle="modal" data-target="#i-modal" src="images/masonry_layout/illustration_2.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card3"><img class="card-img illustration-img" data-toggle="modal" data-target="#i-modal" src="images/masonry_layout/illustration_3.png" alt="Card image"></div>
   <div class="card illustration-card" id="card4"><img class="card-img illustration-img" src="images/masonry_layout/illustration_4.png" alt="Card image"></div>
    <div class="card illustration-card" id="card5"><img class="card-img illustration-img" src="images/masonry_layout/illustration_5.png" alt="Card image"></div>
    <div class="card illustration-card" id="card6"><img class="card-img illustration-img" src="images/masonry_layout/illustration_6.png" alt="Card image"></div>
@@ -106,18 +108,57 @@
   </div>
 
 
-<div class="modal fade" id="i-modal-1" role="dialog">
+<div class="modal fade" id="i-modal" role="dialog">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <img src="images/illustration/illustration_1.png" alt="">
+          <div id="content">
+          </div>
       </div>
     </div>
   </div>
-
-
 </div>
+
+<script id="modal-template" type="text/x-handlebars-template">
+  <img style="width:100%" class="img-fluid img-responsive" src="{{src}}"/>
+</script>
+
+
+<script type="text/javascript">
+
+let card1 = {src: "images/masonry_layout/illustration_1.png"};
+let card2 = {src: "images/masonry_layout/illustration_2.png"};
+let card3 = {src: "images/masonry_layout/illustration_3.png"};
+
+let source = $("#modal-template").html();
+let modal_template = Handlebars.compile(source);
+
+$("#card1").click(function () {
+  var html = modal_template(card1);
+
+  $('#content').html(html);
+});
+
+
+$("#card2").click(function () {
+  var html = modal_template(card2);
+
+  $('#content').html(html);
+});
+
+$("#card3").click(function () {
+  var html = modal_template(card3);
+
+  $('#content').html(html);
+});
+
+
+</script>
+
+
+
+
 
 
 
@@ -167,11 +208,12 @@
 </div>
 </footer>
 
-      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+
       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="js/navbar_offcanvas.js"></script>
       <script src="js/index.js"></script>
+
 
 </body>
 </html>
