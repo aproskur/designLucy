@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/masonry_style.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <title>Обо мне</title>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <title>Иллюстрация портфолио</title>
+
+
 </head>
 
-<body class="about-page-clone">
+<body>
 
 
   <!--navbar starts-->
@@ -49,11 +54,11 @@
                 <ul class="dropdown-menu">
                   <li><a class="customized-dropdown-link" href="polygraphy.html">Полиграфия</a></li>
                   <li><a class="customized-dropdown-link" href="brand_design.html">Фирменный стиль</a></li>
-                  <li><a class="customized-dropdown-link" href="illustration.html">Иллюстрация</a></li>
                 </ul>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#"> Обо мне &nbsp; </a>
+                <a class="nav-link" href="about.html"> Обо мне &nbsp; </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="services.html"> Услуги </a>
@@ -68,61 +73,83 @@
   <!--navbar ends-->
 
 
-
 <main>
+
   <div class="container mt-5 mb-5">
-      <div aria-label="breadcrumb mb-5">
-          <ol class="breadcrumb customized-breadcrumb about-breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Главная страница</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Обо мне</li>
-        </ol>
-      </div>
 
-      <div class="row">
-
-                <div class="col-md-4 mr-5">
-                  <img class="img-fluid img-responsive" src="images/Lucy/portrait_1.jpg" alt="Фото Людмилы">
-                </div>
-        <div class="col-md-7 aboutme">
-              <article>
-                <div class="mb-3">
-                  <h4>Приветствую!</h4>
-
-                </div>
-                <p>Меня зовут Людмила Степашина.<br>
-                Я художник-дизайнер, а также занимаюсь иллюстрациями.<br>
-                В дизайне в основном работаю по нескольким направлениям, а это:
-                  <ul>
-                    <li>Фирменный стиль</li>
-                    <li>Полиграфия</li>
-                    <li>Иллюстрация</li>
-                  </ul>
-                  Очень люблю свою профессию, постоянно читаю что-то новое, узнаю и развиваюсь.
-                  Нахожусь в курсе новинок в дизайне, общаюсь с творческими людьми.
-                  Имею высшее художественное образование, а также заканчивала курсы по разным художественным направлениям.
-                  Очень часто получаю сердечные отзывы от заказчиков о проделанной работе, а также благодарственные письма и грамоты.
-                  <a href="contact.html" class="link-about">С удовольствием сделаю проект, нарисую иллюстрацию или разработаю
-                    полиграфический дизайн для вас.</a></p>
-              </article>
-        </div>
-      </div>
-<div class="row">
-  <div class="col-md-3">
-      <a class="btn btn-outline-warning" href="about.html" type="button"> посмотреть SO-WHITE ПАТТЕРН </a>
+    <div aria-label="breadcrumb ">
+      <ol class="breadcrumb customized-breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Главная страница</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Иллюстрация</li>
+    </ol>
   </div>
 
+  <div class="card-columns">
+   <div class="card illustration-card" id="card1"><img class="card-img illustration-img" data-toggle="modal" data-target="#i-modal-1" src="images/masonry_layout/illustration_1.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card2"><img class="card-img illustration-img" src="images/masonry_layout/illustration_2.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card3"><img class="card-img illustration-img" src="images/masonry_layout/illustration_3.png" alt="Card image"></div>
+  <div class="card illustration-card" id="card4"><img class="card-img illustration-img" src="images/masonry_layout/illustration_4.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card5"><img class="card-img illustration-img" src="images/masonry_layout/illustration_5.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card6"><img class="card-img illustration-img" src="images/masonry_layout/illustration_6.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card7"><img class="card-img illustration-img" src="images/masonry_layout/illustration_7.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card8"><img class="card-img illustration-img" src="images/masonry_layout/illustration_8.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card9"><img class="card-img illustration-img" src="images/masonry_layout/illustration_9.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card10"><img class="card-img illustration-img" src="images/masonry_layout/illustration_10.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card11"><img class="card-img illustration-img" src="images/masonry_layout/illustration_11.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card12"><img class="card-img illustration-img" src="images/masonry_layout/illustration_12.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card13"><img class="card-img illustration-img" src="images/masonry_layout/illustration_13.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card14"><img class="card-img illustration-img" src="images/masonry_layout/illustration_14.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card15"><img class="card-img illustration-img" src="images/masonry_layout/illustration_15.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card16"><img class="card-img illustration-img" src="images/masonry_layout/illustration_16.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card17"><img class="card-img illustration-img" src="images/masonry_layout/illustration_17.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card18"><img class="card-img illustration-img" src="images/masonry_layout/illustration_18.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card19"><img class="card-img illustration-img" src="images/masonry_layout/illustration_19.png" alt="Card image"></div>
+   <div class="card illustration-card" id="card20"><img class="card-img illustration-img" src="images/masonry_layout/illustration_20.png" alt="Card image"></div>
+  </div>
+
+  <div id="content">
+    bzyk
+  </div>
+
+<div class="modal fade" id="i-modal-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+
+      </div>
+    </div>
+  </div>
 </div>
 
+<script id="modal-template" type="text/x-handlebars-template">
+  <img src="{{src}}"/>
+</script>
+
+<script type="text/javascript">
+  let source = $("#modal-template").html();
+  let template = Handlebars.compile(source);
+  let data = {
+    src: "images/illustration/illustration_1.png"
+  };
+
+  let html = template(data)
+  $("#content").html(html);
+</script>
 
 
-  </div>
+
+
+
 
 
 
 </main>
 
+
 <footer class="footer">
-  <div class="container">
+  <div class="container pt-5">
     <div class="row">
       <div class="col-sm-3 col-md-2 mt-3">
         <div id="footer-image-container" class="zoom-brand">
@@ -131,9 +158,10 @@
       </div>
       <nav class="col-sm-3 col-md-2 mt-3">
         <ul id="footer-menu" class="list-unstyled">
-            <li><a class="footer-link" href="index.html">Главная</a></li>
+           <li><a class="footer-link" href="index.html">Главная</a></li>
+            <li><a class="footer-link" href="index.html#myworks">Мои&nbsp;работы</a></li>
             <li><a class="footer-link" href="services.html">Услуги</a></li>
-            <li><a class="footer-link" href="#">Обо&nbsp;мне</a></li>
+            <li><a class="footer-link" href="about.html">Обо&nbsp;мне</a></li>
             <li><a class="footer-link" href="contact.html">Контакты</a></li>
         </ul>
       </nav>
@@ -158,11 +186,12 @@
 </div>
 </footer>
 
-      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+
       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="js/navbar_offcanvas.js"></script>
       <script src="js/index.js"></script>
+
 
 </body>
 </html>
