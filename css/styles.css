@@ -13,7 +13,21 @@
   align: justify;
 }
 
+.about-page {
+  background-image: url('/images/so-white.png');
+}
+
+.about-page-clone {
+  background-image: url('/images/new_year_background.png');
+}
+
 .services-page {
+  background-image: url('/images/so-white.png');
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+}
+
+.services-page-clone{
   background-image: url('/images/new_year_background.png');
   font-family: "Montserrat", sans-serif;
   line-height: 1.8;
@@ -41,6 +55,15 @@
 .portrait-about {
   height: 700px;
 }
+
+.illustration-card {
+  transition: 0.3s;
+}
+
+.illustration-card:hover {
+  opacity: 0.6;
+}
+
 
 #contact-body {
   height: 100%;
@@ -319,6 +342,10 @@
 }
 
 .services-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.about-breadcrumb {
   background-color: rgba(0, 0, 0, 0);
 }
 
