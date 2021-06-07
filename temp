@@ -6,6 +6,17 @@
 <source media="(min-width: 320px)" srcset="images/imagesXS/2.png">
 
 
+<script type="text/javascript">
+  let source = $("#modal-template").html();
+  let template = Handlebars.compile(source);
+  let data = {
+    src: "images/illustration/illustration_1.png"
+  };
+
+  let html = template(data)
+  $("#content").html(html);
+</script>
+
 
 SLIDER
 <div id="work_samples_carousel" class="carousel slide carousel-fade" data-ride="carousel">
