@@ -7,10 +7,16 @@
   padding-top: 50px;
 }
 
+
+
 .aboutme {
   font-family: "Montserrat", sans-serif;
   line-height: 1.8;
   align: justify;
+}
+
+.my-header {
+  font-family: "Playfair display", sans-serif;
 }
 
 .about-page {
@@ -26,6 +32,8 @@
   font-family: "Montserrat", sans-serif;
   line-height: 1.8;
 }
+
+
 
 .services-page-clone{
   background-image: url('/images/new_year_background.png');
