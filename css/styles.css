@@ -16,7 +16,7 @@
 }
 
 .my-header {
-  font-family: "Playfair display", sans-serif;
+  font-family: "Playfair display", sans-serif !important; 
 }
 
 .about-page {
