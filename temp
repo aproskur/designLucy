@@ -67,3 +67,16 @@ SLIDER
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+.services-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.about-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.contact-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+
+}
