@@ -7,7 +7,10 @@
   padding-top: 50px;
 }
 
-
+.fa-lg {
+  height: 36px;
+  width: 36px;
+}
 
 .aboutme {
   font-family: "Montserrat", sans-serif;
@@ -537,6 +540,7 @@
 #footer-social-icons{
   margin: 0.35em 0;
   text-align: right;
+  
 
 
 }
