@@ -7,10 +7,24 @@
   padding-top: 50px;
 }
 
-
-* a {
-  outline: 0;
+.playfair {
+  font-family: "Playfair display", sans-serif;
 }
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+a.active {
+    color: #6699cc;
+    font-weight: 700;
+}
+
+a.active-footer {
+  font-weight: 700;
+}
+
+
 .fa-lg {
   height: 36px;
   width: 36px;
@@ -91,21 +105,39 @@
 }
 
 
-
 .navbar-collapse {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   white-space: nowrap;
 }
 
+
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #6699cc;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link.active-black {
+    color: black;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link.active-black :hover {
+    color: white !important;
+    font-weight: 700;
+}
+
+
 .navbar-light .navbar-nav .nav-link {
   color: black;
 }
 
+
+
 .navbar-light .navbar-nav .nav-link:hover {
   color: #6699cc;
 }
-
 
 
 @media only screen and (max-width: 991px) {

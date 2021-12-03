@@ -80,3 +80,9 @@ SLIDER
   background-color: rgba(0, 0, 0, 0);
 
 }
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #6699cc !important;
+    font-weight: 700 !important;
+
+}
