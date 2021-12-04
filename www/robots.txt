@@ -1,0 +1,4 @@
+User-agent: *
+Site-map: http://ludesign.info/sitemap.xml
+Allow: /
+Disallow: /node_modules/
