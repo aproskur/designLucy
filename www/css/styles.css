@@ -582,6 +582,13 @@ a.active-footer {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .customized-social-icon{
+     width: 48px;
+     height: 48px;
+  }
+}
+
 
 #contact-main h4 {
   font-family: "Playfair display", sans-serif;
