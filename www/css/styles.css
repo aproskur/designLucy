@@ -21,8 +21,8 @@
 
 
 .navbar-toggler-icon {
-    width: 48px!important;
-    height: 48px!important;
+    width: 48px;
+    height: 48px;
   }
 
 a.active {
@@ -34,7 +34,6 @@ a.active-footer {
   font-weight: 700;
 }
 
-.social
 
 .aboutme {
   font-family: "Montserrat", sans-serif;
@@ -72,7 +71,7 @@ a.active-footer {
 
 
 .link-about {
-  color: inherit;
+  color: inherit;btn-footer-action-call
 }
 
 .link-about:hover {
@@ -517,7 +516,7 @@ a.active-footer {
 
 
 
-#footer-image-container{
+.footer-image-container{
   height: 100%;
   display: flex;
   align-items:center;
@@ -530,21 +529,21 @@ a.active-footer {
 }
 
 
-#footer-copyright {
+.footer-copyright {
   font-size: 0.8em;
 }
 
-#footer-menu {
+.footer-menu {
   font-family: "Montserrat", sans-serif;
 }
 
 @media only screen and (max-width: 992px){
-  #footer-menu{
+  .footer-menu{
     text-align: center;
   }
 }
 
-#footer-menu li {
+.footer-menu li {
   margin: 0.35em 0;
 }
 .footer-link {
@@ -557,37 +556,50 @@ a.active-footer {
   text-decoration: none;
 }
 
-#footer-action-call {
+.slogan {
     font-family: "Playfair display", sans-serif;
     text-align: center;
     font-size: 1.25em;
 }
 
 @media only screen and (max-width: 992px){
-  #footer-action-call {
-      font-family: "Playfair display", sans-serif;
+  .slogan {
       text-align: center;
-      font-size: 1em;
   }
 }
-#btn-footer-action-call{
+
+.action-button{
   font-family: "Playfair display", sans-serif;
+  box-shadow: 1.3px 2.6px 2.6px hsl(0deg 0% 0% / 0.43);
 }
 
-#footer-social-icons{
-  margin: 0.35em 0;
-  text-align: right;
-
-
-
-}
-
-@media only screen and (max-width: 992px) {
-  #footer-social-icons{
-    margin: 0 auto;
-    text-align: center;
+@media only screen and (max-width: 992px){
+  .action-button {
+          width: 150px;
+          height: 50px;
+          line-height: 50px;
+          padding: 0;
   }
 }
+
+.footer-social-icon-container {
+text-align: center;
+align-items: center;
+padding: 0;
+line-height: 150px;
+}
+
+.customized-social-button {
+  width: 48px!important;
+  height: 48px!important;
+}
+
+.btn-social-icon > :first-child {
+  line-height: 48px!important;
+}
+
+
+
 
 @media only screen and (max-width: 992px) {
   .customized-social-icon{
