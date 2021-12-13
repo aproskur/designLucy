@@ -92,7 +92,7 @@ a.active-footer {
 }
 
 
-#contact-body {
+.contact-body {
   height: 100%;
   margin: 0;
   background-image: url("/images/autumn.jpg");
@@ -102,7 +102,7 @@ a.active-footer {
 }
 
 
-#navbar-main {
+.navbar-adapted-for-slider {
   position: absolute;
   width: 100%;
   z-index: 999;
@@ -153,8 +153,6 @@ a.active-footer {
     font-weight: 400;
     white-space: nowrap;
     background-color: rgba(238, 238, 238, 0.9);
-
-
   }
 
   .navbar-light .navbar-nav .nav-link {
@@ -418,14 +416,10 @@ a.active-footer {
     height: 100vh;
 }
 
-
-.w-100 {
+.viewport-height {
   width: 100%;
   height: 100vh;
 }
-
-
-
 
 #mainphrase {
   font-family: "Playfair display", sans-serif;
@@ -433,12 +427,6 @@ a.active-footer {
   font-size: 2rem;
 }
 
-/*
-#work_samples_carousel img {
-  width: 100%;
-  max-height: 78vh;
-}
-*/
 #work_samples_carousel h4 {
   font-family: "Playfair display", sans-serif;
   font-weight: 700;
@@ -637,7 +625,6 @@ line-height: 150px;
   background-color: #6699cc;
   font-family: "Montserrat", sans-serif;
   color: white;
-
 }
 
 .btn-look-carefully-background-bold {
@@ -645,6 +632,7 @@ line-height: 150px;
   font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: normal;
+  box-shadow: 2.3px 2.6px 2.6px rgb(102,153,204,.4);
 }
 
 .btn-look-carefully-background-bold:hover {
