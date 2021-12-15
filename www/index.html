@@ -108,12 +108,13 @@
     <div class="carousel-item active">
       <picture>
 
-       <source media="(orientation: landscape)" srcset="images/slider_1.png">
+       <source media="(orientation: landscape)" srcset="images/slider_1.avif">
        <source media="(min-width: 871px)" srcset="images/slider_1.png">
        <source media="(min-width: 480px) and (max-width:870px)" srcset="images/slider_tablet/Exlibris.png">
        <source media="(min-width: 320px)" srcset="images/imagesM/slider_640-na-1136-px_logo.avif" type="image/avif">
        <source media="(min-width: 320px)" srcset="images/imagesM/slider_640-na-1136-px_logo.png">
-      <img src="images/slider_1.jpg" class="d-block w-100 img-fluid viewport-height" alt="Логотип дизайнер">
+       <source srcset="images/slider_1.avif" type="image/avif">
+       <img src="images/slider_1.png" class="d-block w-100 img-fluid viewport-height" alt="Логотип дизайнер">
       </picture>
     </div>
     <div class="carousel-item">
@@ -123,7 +124,8 @@
         <source media="(min-width: 320px)" srcset="images/imagesM/slider_640-na-1136-px_zaichik.avif" type="image/avif">
         <source media="(min-width: 480px) and (max-width:870px)" srcset="images/slider_tablet/TimkaToys.png">
         <source media="(min-width: 320px)" srcset="images/imagesM/slider_640-na-1136-px_zaichik.png">
-       <img src="images/slider_2.jpg" class="d-block w-100 img-fluid viewport-height" alt="Иллюстрация">
+        <source srcset="images/slider_2.avif" type="image/avif">
+        <img src="images/slider_2.jpg" class="d-block w-100 img-fluid viewport-height" alt="Иллюстрация">
       </picture>
     </div>
     <div class="carousel-item">
@@ -133,6 +135,7 @@
           <source media="(min-width: 480px) and (max-width:870px)" srcset="images/slider_tablet/Garant.png">
           <source media="(min-width: 320px)" srcset="images/imagesM/slider_640-na-1136-px_garant.avif" type="image/avif">
           <source media="(min-width: 320px)" srcset="images/imagesM/slider_640-na-1136-px_garant.png">
+          <source srcset="images/slider_3.avif" type="image/avif">
         <img class="d-block w-100 img-fluid viewport-height" src="images/slider_3.png" alt="Логотип">
       </picture>
     </div>
@@ -143,6 +146,7 @@
         <source media="(min-width: 480px) and (max-width:870px)" srcset="images/slider_tablet/Ksenia_Hutter.png">
         <source media="(min-width: 320px)" srcset="images/imagesM/slider_640-na-1136-px_hutter.avif" type="image/avif">
         <source media="(min-width: 320px)" srcset="images/imagesM/slider_640-na-1136-px_hutter.png">
+          <source srcset="images/slider_4.avif" type="image/avif">
        <img class="d-block w-100 img-fluid viewport-height" src="images/slider_4.png" alt="Визитная карточка">
       </picture>
     </div>
@@ -153,6 +157,7 @@
         <source media="(min-width: 480px) and (max-width:870px)" srcset="images/slider_tablet/Prime-Estetic.png">
         <source media="(min-width: 320px)" srcset="images/imagesM/slider_640-na-1136-px_PE_visitki.avif" type="image/avif">
         <source media="(min-width: 320px)" srcset="images/imagesM/slider_640-na-1136-px_PE_visitki.png">
+          <source srcset="images/slider_5.avif" type="image/avif">
        <img class ="d-block w-100 img-fluid viewport-height" src="images/slider_5.png" alt="Визитная карточка">
       </picture>
     </div>
@@ -185,7 +190,12 @@
         <div class="col-12 col-md-6">
           <div class="card">
             <div class="moving-img-container">
-              <a href="printing.html"><img src="images/540-na-300-px_poligr.png" class="moving-image" alt="Пример работы в области полиграфии"/></a>
+              <a href="printing.html">
+                <picture>
+                    <source srcset="images/540-na-300-px_poligr.avif" type="image/avif" class="moving-image" alt="Пример работы в области полиграфии">
+                    <img src="images/540-na-300-px_poligr.png" class="moving-image" alt="Пример работы в области полиграфии"/>
+                </picture>
+              </a>
             </div>
             <div class="card-body">
               <div class="card-title">
@@ -203,7 +213,12 @@
         <div class="col-12 col-md-6">
           <div class="card">
             <div class="moving-img-container">
-              <a href="brand_design.html"><img src="images/540-na-300-px_firm-st.png" class="moving-image" alt="Пример работы в области фирменного стиля"/></a>
+              <a href="brand_design.html">
+                <picture>
+                    <source srcset="images/540-na-300-px_firm-st.avif" class="moving-image" alt="Пример работы в области фирменного стиля" type="image/avif">
+                    <img src="images/540-na-300-px_firm-st.png" class="moving-image" alt="Пример работы в области фирменного стиля"/>
+                </picture>
+              </a>
             </div>
             <div class="card-body">
               <div class="card-title">
@@ -225,7 +240,12 @@
         <div class="col-12">
           <div class="card">
             <div class="moving-img-container">
-              <a href="illustration.html"><img src="images/1100-na-400-px_illustr.png" class="moving-image" alt="Пример работы в области иллюстрации"/></a>
+              <a href="illustration.html">
+                <picture>
+                    <source srcset="images/1100-na-400-px_illustr.avif" class="moving-image" alt="Пример работы в области иллюстрации" type="image/avif">
+                    <img src="images/1100-na-400-px_illustr.png" class="moving-image" alt="Пример работы в области иллюстрации"/>
+                </picture>
+              </a>
             </div>
             <div class="card-body">
               <div class="card-title">
@@ -240,8 +260,8 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
+    </div>
     </section>
 
 
