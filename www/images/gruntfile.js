@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 
     clean: {
       build: {
-        src: ['comp_slider']
+        src: ['_compressed']
       }
     },
 
@@ -28,16 +28,16 @@ module.exports = function(grunt) {
 imagemin: {
   options: {
     use: [
-      pngquant({quality: [0.4, 0.4]}),
-      mozjpeg({quality: 40})
+      pngquant({quality: [0.8, 0.8]}),
+      mozjpeg({quality: 80})
     ]
   },
   dynamic: {
     files: [{
       cwd: '',
       expand: true,
-      src: ['slider/*.{png,jpg}'],
-      dest: 'comp_slider'
+      src: ['_img_to_compress/*.{png,jpg}'],
+      dest: '_compressed'
     }]
   }
 }
