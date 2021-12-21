@@ -19,6 +19,9 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.no-decor {
+  text-decoration: none;
+}
 
 .navbar-toggler-icon {
     width: 48px;
@@ -561,6 +564,12 @@ a.active-footer {
   box-shadow: 1.3px 2.6px 2.6px hsl(0deg 0% 0% / 0.43);
 }
 
+.action-button-shadowy {
+  font-family: "Playfair display", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
 @media only screen and (max-width: 992px){
   .action-button {
           width: 150px;
@@ -696,4 +705,25 @@ line-height: 150px;
     white-space: nowrap;
     line-height: 0.75;
   }
+}
+
+
+.text-404 {
+font-size: 30px;
+text-align: justify;
+}
+
+@media only screen and (min-width: 350px) {
+  .text-404 {
+    font-size: 20px;
+    text-align: center;
+
+  }
+
+  @media only screen and (min-width: 576px) {
+    .text-404 {
+      font-size: 20px;
+      text-align: left;
+
+    }
 }
