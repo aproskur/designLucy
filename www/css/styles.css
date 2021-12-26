@@ -108,11 +108,17 @@ a.active-footer {
 .contact-body {
   height: 100%;
   margin: 0;
-  background-image: url("/images/autumn.jpg");
+
+  background-image: image-set(
+    "/images/autumn.avif" type("image/avif"),
+    "/images/autumn.webp" type("image/webp"),
+    "/images/autumn.jpg" type("image/jpeg")
+    );
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 
 .navbar-adapted-for-slider {
