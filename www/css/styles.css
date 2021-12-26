@@ -19,8 +19,18 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.heading-h5-style {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
 .no-decor {
   text-decoration: none;
+}
+
+.custom-heading-h4 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .navbar-toggler-icon {
