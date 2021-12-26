@@ -108,6 +108,7 @@ a.active-footer {
 .contact-body {
   height: 100%;
   margin: 0;
+  background-image: url("/images/autumn.jpg");
 
   background-image: image-set(
     "/images/autumn.avif" type("image/avif"),
