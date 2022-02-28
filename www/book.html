@@ -20,18 +20,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.9.2/bootstrap-social.min.css" integrity="sha512-3CYhYJnb7/677SX8kzxL2+gW6vVzXiVEC6ZhK0S4tGVp7dTlMjSZPVvA79aH8YMU0xuKn2tLZIFaBctUi4Cb/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="description" content="Я художник-дизайнер, также занимаюсь иллюстрациями. Мои основные направления в дизайне: полиграфия, фирменный стиль, иллюстрация">
-    <title>Полиграфия - Фирменный стиль - Иллюстрация | Дизайнер Людмила Степашина</title>
+    <meta name="description" content="Вёрстка книги">
+    <title>Вёрстка книги "Записки музейщиков"</title>
 </head>
 
-<body class="about-page">
+<body>
 
 
   <!--navbar starts-->
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav id="navbar-contact-page" class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
           <div class="zoom-brand">
-            <img class="img-responsive" src="images/exlibris_Stepashina.png" id="exlibris_navbrand" alt="Логотип-монограмма">
+            <img class="img-fluid" src="images/exlibris_Stepashina.png" id="exlibris_navbrand" alt="Логотип-монограмма">
           </div>
         </a>
         <div id="designer_name">
@@ -40,7 +40,7 @@
       </div>
 
 
-        <button aria-label="Открыть навигационное меню" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" id="menuButton">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" id="menuButton">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -53,24 +53,24 @@
           </div>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html"> Главная &nbsp; </a>
+                <a class="nav-link" href="index.html" aria-label="На главную страницу"> Главная &nbsp; </a>
               </li>
               <li class="dropdown nav-link">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Работы <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle avtive" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Работы <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a class="customized-dropdown-link" href="printing.html">Полиграфия</a></li>
-                  <li><a class="customized-dropdown-link" href="brand_design.html">Фирменный стиль</a></li>
-                  <li><a class="customized-dropdown-link" href="illustration.html">Иллюстрация</a></li>
+                  <li><a class="customized-dropdown-link active" href="printing.html" aria-label="Работы Полиграфия">Полиграфия</a></li>
+                  <li><a class="customized-dropdown-link" href="brand_design.html" aria-label="Работы фирменный стиль">Фирменный стиль</a></li>
+                  <li><a class="customized-dropdown-link" href="illustration.html" aria-label="Работы иллюстрация">Иллюстрация</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#"> Обо мне &nbsp; </a>
+                <a class="nav-link" href="about.html" aria-label="На страницу обо мне"> Обо мне &nbsp; </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html"> Услуги </a>
+                <a class="nav-link" href="services.html" aria-label="На страницу услуги"> Услуги </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html"> Контакты </a>
+                <a class="nav-link" href="contact.html" aria-label="На страницу контакты"> Контакты </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="blog.html" aria-label="На страницу блог">Блог</a>
@@ -82,52 +82,30 @@
   <!--navbar ends-->
 
 
-
 <main>
   <div class="container mt-5 mb-5">
 
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb customized-breadcrumb about-breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Главная страница</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Обо мне</li>
-        </ol>
-      </nav>
+  <nav aria-label="breadcrumb">
+      <ol class="breadcrumb customized-breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Главная страница</a></li>
+    <li class="breadcrumb-item"><a href="printing.html">Полиграфия</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Вёрстка книги "Записки музейщика"</li>
+    </ol>
+  </nav>
 
 
-      <div class="row">
+    <img class="img-fluid" src="images/Printing/kniga/Kniga_oblogka.png" alt="Обложка книги">
+    <img class="img-fluid" src="images/Printing/kniga/Kniga_1.png" alt="Разворот книги">
+    <img class="img-fluid" src="images/Printing/kniga/Kniga_2.png" alt="Вёрстка книги">
+    <img class="img-fluid" src="images/Printing/kniga/Kniga_3.png" alt="Верстка книги">
+    <img class="img-fluid" src="images/Printing/kniga/Kniga_4.png" alt="Книжный разворот">
+    <img class="img-fluid" src="images/Printing/kniga/Kniga_5.png" alt="Вёрстка книги">
+    <img class="img-fluid" src="images/Printing/kniga/Kniga_6.png" alt="Верстка книги">
+    <img class="img-fluid" src="images/Printing/kniga/Kniga_7.png" alt="Вёрстка книги">
+    <img class="img-fluid" src="images/Printing/kniga/Kniga_8.png" alt="Верстка книги">
 
-                <div class="col-md-4 mr-5">
-                  <picture>
-                   <source srcset="images/Lucy/portrait_1.avif" type="image/avif">
-                   <source srcset="images/Lucy/portrait_1.webp" type="image/webp">
-                   <img class="img-fluid img-responsive" src="images/Lucy/portrait_1.jpg" alt="Фото Людмилы">
-                  </picture>
-                </div>
-        <div class="col-md-7 aboutme">
-                <div class="mb-3">
-                  <p class="playfair" style="font-size:1.5rem;">Приветствую!</p>
-                </div>
-              <article class="montserrat">
-                <p>Меня зовут Людмила Степашина.<br>
-                Я художник-дизайнер, а также занимаюсь иллюстрациями.<br>
-                Мой опыт работы в дизайне 20 лет. В основном работаю по нескольким направлениям:</p>
-                  <ul>
-                    <li>Фирменный стиль</li>
-                    <li>Полиграфия</li>
-                    <li>Иллюстрация</li>
-                  </ul>
-                  <p>Очень люблю свою профессию, постоянно читаю что-то новое, узнаю и развиваюсь.
-                  Нахожусь в курсе новинок в дизайне, общаюсь с творческими людьми.
-                  Имею высшее художественное образование, а также заканчивала курсы по разным художественным направлениям.
-                  Очень часто получаю сердечные отзывы от заказчиков о проделанной работе, а также благодарственные письма и грамоты.
-                  <a href="contact.html" class="link-about" aria-label="Ссылка на страницу контакты">С удовольствием сделаю проект, нарисую иллюстрацию или разработаю
-                    полиграфический дизайн для Вас.</a> Я работаю с клиентами из разных городов, а это г. Череповец,
-г. Москва, г. Санкт-Петербург, г. Геленджик, г. Кировск, г. Чебоксары.</p>
-              </article>
-        </div>
-      </div>
+
   </div>
-
 
 
 </main>
@@ -145,10 +123,10 @@
             <li><a class="footer-link" href="index.html">Главная</a></li>
             <li><a class="footer-link" href="index.html#myworks">Мои&nbsp;работы</a></li>
             <li><a class="footer-link" href="services.html">Услуги</a></li>
-            <li><a class="footer-link active-footer" href="about.html">Обо&nbsp;мне</a></li>
+            <li><a class="footer-link" href="about.html">Обо&nbsp;мне</a></li>
             <li><a class="footer-link" href="contact.html">Контакты</a></li>
             <li><a class="footer-link" href="blog.html">Блог</a></li>
-          </ul>
+        </ul>
       </nav>
       <div class="col-sm-12 col-md-12 col-lg-4 mt-3">
         <div class="slogan">
@@ -169,12 +147,13 @@
 </div>
 </footer>
 
-
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-<script src="js/navbar_offcanvas.js"></script>
-<!-- Yandex.Metrika counter -->
+
+      <script src="js/navbar_offcanvas.js"></script>
+
+      <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
@@ -188,7 +167,6 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/86746576" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
 
 </body>
 </html>
