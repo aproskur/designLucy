@@ -180,6 +180,10 @@ a.active-footer {
   color: #6699cc;
 }
 
+.btn-mobile {
+  display: none;
+}
+
 
 @media only screen and (max-width: 991px) {
 
@@ -208,6 +212,11 @@ a.active-footer {
 
 .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.0);
+  border: none;
+}
+
+.dropdown-menu-footer {
+  background-color: white;
   border: none;
 }
 
