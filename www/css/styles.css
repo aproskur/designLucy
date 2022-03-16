@@ -180,8 +180,8 @@ a.active-footer {
   color: #6699cc;
 }
 
-.btn-mobile {
-  display: none;
+.btn-portfolio {
+
 }
 
 
@@ -287,7 +287,36 @@ a.active-footer {
   }
 }
 
+.btn-portfolio {
+  background-color: #6699cc;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: normal;
+  box-shadow: 2.3px 2.6px 2.6px rgb(102,153,204,.4);
+  width: 150px;
+  margin-bottom: 25px;
+}
 
+.btn-portfolio:hover {
+  font-weight: bold;
+  color: white;
+}
+
+
+
+.btn-portfolio-white {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #36454F;
+  box-shadow: 1.3px 2.6px 2.6px hsl(0deg 0% 0% / 0.43);
+  width: 150px;
+  margin-bottom: 25px;
+}
+
+.btn-portfolio-white:hover {
+  font-weight: bold;
+  color: #808080;
+}
 
 
 
