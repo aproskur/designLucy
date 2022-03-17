@@ -180,6 +180,10 @@ a.active-footer {
   color: #6699cc;
 }
 
+.btn-portfolio {
+
+}
+
 
 @media only screen and (max-width: 991px) {
 
@@ -208,6 +212,11 @@ a.active-footer {
 
 .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.0);
+  border: none;
+}
+
+.dropdown-menu-footer {
+  background-color: white;
   border: none;
 }
 
@@ -276,6 +285,37 @@ a.active-footer {
     max-width: 8rem;
     max-height: 10rem;
   }
+}
+
+.btn-portfolio {
+  background-color: #6699cc;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: normal;
+  box-shadow: 2.3px 2.6px 2.6px rgb(102,153,204,.4);
+  width: 150px;
+  margin-bottom: 25px;
+}
+
+.btn-portfolio:hover {
+  font-weight: bold;
+  color: white;
+}
+
+
+
+.btn-portfolio-white {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #36454F;
+  box-shadow: 1.3px 2.6px 2.6px hsl(0deg 0% 0% / 0.43);
+  width: 150px;
+  margin-bottom: 25px;
+}
+
+.btn-portfolio-white:hover {
+  font-weight: bold;
+  color: #808080;
 }
 
 
