@@ -1,4 +1,22 @@
 
+hiddenElements = $(':hidden');
+visibleElements = $(':visible');
+
+
+$(".sub-menu ul").hide();
+$(".sub-menu a").click(function () {
+  if($('#works-list:visible').length == 0){
+	$(this).parent(".sub-menu").children("ul").slideDown("100");
+	$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+} else {
+  $(this).parent(".sub-menu").children("ul").slideUp("slow");
+  $(this).find(".right").toggleClass("fa-caret-down fa-caret-up");
+}
+});
+
+
+
+
 <div class="card-deck">
   <div class="card">
       <img src="images/Blog/cover_certificate.png" class="card-img-top" alt="Дизайн каталога">
