@@ -622,8 +622,7 @@ a.active-footer {
     font-family: "Playfair display", sans-serif;
     text-align: center;
     font-size: 1.25em;
-    display: flex;
-    align-items: center;
+
 }
 
 @media only screen and (max-width: 992px){
