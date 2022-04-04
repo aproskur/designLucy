@@ -59,6 +59,37 @@ $(".sub-menu a").click(function () {
 });
 
 
+$(".sub-menu ul").hide();
+$(".sub-menu a").click(function () {
+	$(this).parent(".sub-menu").children("ul").slideToggle("100");
+	$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+});
+
+
+
+.nav-footer ul li a {
+	display: block;
+	padding: 5px 5px;
+	color: #333;
+	text-decoration: none;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	transition: 0.2s linear;
+}
+
+.list-container {
+  height: auto;
+  width: 100%;
+}
+
+.nav-footer ul li a:hover {
+
+	color: #6699cc;
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 <div class="card-deck">

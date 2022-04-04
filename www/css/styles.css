@@ -37,6 +37,7 @@
   margin-top: 10px;
 }
 
+
 .no-decor {
   text-decoration: none;
 }
@@ -615,10 +616,14 @@ a.active-footer {
   text-decoration: none;
 }
 
+
+
 .slogan {
     font-family: "Playfair display", sans-serif;
     text-align: center;
     font-size: 1.25em;
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 992px){
