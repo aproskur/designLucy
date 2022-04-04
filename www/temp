@@ -1,4 +1,97 @@
 
+<div class="row">
+  <div class="col-md-6">
+    <h4 class="my-header mb-2">Полиграфия</h4>
+    <ul>
+      <li>Дизайн буклетов  <b>от 3000 Р</b></li>
+      <li>Дизайн календарей <b>от 3500 Р</b></li>
+      <li>Дизайн каталогов <b>от 8000 Р</b></li>
+      <li class="li-undotted mt-1">А также:</li>
+      <li>Визитки <b>от 1000 Р</b></li>
+      <li>Листовки <b>от 1800 Р</b></li>
+      <li>Флаеры <b>от 1800 Р</b></li>
+      <li>Брошюры <b>от 5000 Р</b></li>
+      <li>Открытки <b>от 2000 Р</b></li>
+      <li>Приглашения <b>от 2000 Р</b></li>
+      <li>Наклейки и стикеры <b>от 3000 Р</b></li>
+      <li>Плакаты <b>от 2500 Р</b></li>
+      <li>Блокноты <b>от 2000 Р</b></li>
+      <li>Дипломы <b>от 2000 Р</b></li>
+    </ul>
+  </div>
+
+
+
+
+<nav class="col-sm-12 col-md-12 col-lg-2 mt-3 nav-footer">
+  <ul class="list-unstyled footer-menu">
+      <li><a class="footer-link active-footer" href="#">Главная</a></li>
+      <li class="sub-menu"><a id="works" href="#works">Мои&nbsp;работы<div class="fa fa-caret-down right">  </div></a>
+          <ul id="works-list" class="list-container list-unstyled">
+            <li><a href="printing.html">Полиграфия</a></li>
+            <li><a href="brand_design.html">Фирменный&nbsp;стиль</a></li>
+            <li><a href="illustration.html">Иллюстрация</a></li>
+          </ul>
+      </li>
+      <li><a class="footer-link" href="services.html">Услуги</a></li>
+      <li><a class="footer-link" href="price.html">Услуги</a></li>
+      <li><a class="footer-link" href="about.html">Обо&nbsp;мне</a></li>
+      <li><a class="footer-link" href="contact.html">Контакты</a></li>
+      <li><a class="footer-link" href="blog.html">Блог</a></li>
+  </ul>
+</nav>
+
+
+
+hiddenElements = $(':hidden');
+visibleElements = $(':visible');
+
+
+$(".sub-menu ul").hide();
+$(".sub-menu a").click(function () {
+  if($('#works-list:visible').length == 0){
+	$(this).parent(".sub-menu").children("ul").slideDown("100");
+	$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+} else {
+  $(this).parent(".sub-menu").children("ul").slideUp("slow");
+  $(this).find(".right").toggleClass("fa-caret-down fa-caret-up");
+}
+});
+
+
+$(".sub-menu ul").hide();
+$(".sub-menu a").click(function () {
+	$(this).parent(".sub-menu").children("ul").slideToggle("100");
+	$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+});
+
+
+
+.nav-footer ul li a {
+	display: block;
+	padding: 5px 5px;
+	color: #333;
+	text-decoration: none;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	transition: 0.2s linear;
+}
+
+.list-container {
+  height: auto;
+  width: 100%;
+}
+
+.nav-footer ul li a:hover {
+
+	color: #6699cc;
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 <div class="card-deck">
   <div class="card">
       <img src="images/Blog/cover_certificate.png" class="card-img-top" alt="Дизайн каталога">
