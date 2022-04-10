@@ -5,6 +5,19 @@
 @font-face {
   font-display: swap;
 }
+
+:root {
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Playfair display", sans-serif;
+
+  --clr-dark:  #000;
+  --clr-light:  #fff;
+  --clr-accent: #6699cc;
+}
+
 .body{
   font-size: 100%;
   height: 100%;
@@ -53,7 +66,7 @@
   }
 
 a.active {
-    color: #6699cc;
+    color: var(--clr-accent);
     font-weight: 700;
 }
 
@@ -68,8 +81,13 @@ a.active-footer {
   text-align: justify;
 }
 
+.about-me__img {
+  box-shadow: var(--bs);
+}
+
+
 .my-header {
-  font-family: "Playfair display", sans-serif !important;
+  font-family: var(--ff-secondary) !important;
 }
 
 .about-page {
@@ -78,7 +96,7 @@ a.active-footer {
 
 .services-page {
   background-image: url('/images/so-white.png');
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-primary);
   line-height: 1.8;
 }
 
@@ -87,13 +105,17 @@ a.active-footer {
 }
 
 .services-link {
-  color: #6699cc;
+  color: var(--clr-accent);
 }
 
 .services-link:hover  {
   text-decoration: none;
   font-weight: bold;
-  color: #6699cc;
+  color: var(--clr-accent);
+}
+
+.services__img {
+  box-shadow: var(--bs);
 }
 
 
@@ -102,7 +124,7 @@ a.active-footer {
 }
 
 .link-about:hover {
-  color: #6699cc;
+  color: var(--clr-accent);
   text-decoration: none;
 }
 
@@ -122,7 +144,7 @@ a.active-footer {
 .contact-body {
   height: 100%;
   margin: 0;
-  background-color: #6699cc;
+  background-color: var(--clr-accent);
   background-image: url("/images/autumn.jpg");
 
 
@@ -156,7 +178,7 @@ a.active-footer {
 
 
 .navbar-light .navbar-nav .nav-link.active {
-    color: #6699cc;
+    color: var(--clr-accent);
     font-weight: 700;
 }
 
@@ -166,7 +188,7 @@ a.active-footer {
 }
 
 .navbar-light .navbar-nav .nav-link.active-black :hover {
-    color: white !important;
+    color: var(--clr-light) !important;
     font-weight: 700;
 }
 
@@ -178,14 +200,14 @@ a.active-footer {
 
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #6699cc;
+  color: var(--clr-accent);
 }
 
 
 @media only screen and (max-width: 991px) {
 
   .navbar-collapse {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--ff-primary);
     font-weight: 400;
     white-space: nowrap;
     background-color: rgba(238, 238, 238, 0.9);
@@ -204,7 +226,7 @@ a.active-footer {
 }
 .dropdown-toggle:hover {
   text-decoration: none;
-  color: #6699cc;
+  color: var(--clr-accent);
 }
 
 .dropdown-menu {
@@ -222,7 +244,7 @@ a.active-footer {
 }
 
 .customized-dropdown-link:hover {
-  color: #6699cc;
+  color: var(--clr-accent);
   text-decoration: none;
 }
 
@@ -256,7 +278,7 @@ a.active-footer {
 
 @media only screen and (min-width: 250px){
   #offcanvas-logo {
-    color: #6699cc;
+    color: var(--clr-accent);
     max-width: 5rem;
     max-height: 5rem;
   }
@@ -285,7 +307,7 @@ a.active-footer {
 }
 
 .btn-portfolio {
-  background-color: #6699cc;
+  background-color: var(--clr-accent);
   font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: normal;
@@ -458,7 +480,7 @@ a.active-footer {
 }
 
 .customized-breadcrumb .breadcrumb-item a {
-  color: #6699cc;
+  color: var(--clr-accent);
 }
 
 
@@ -519,7 +541,7 @@ a.active-footer {
 }
   .portfolio-link:hover {
     text-decoration: none;
-    color: #6699cc;
+    color: var(--clr-accent);
   }
 
 
@@ -612,7 +634,7 @@ a.active-footer {
 
 
 .footer-link:hover {
-  color: #6699cc;
+  color: var(--clr-accent);
   text-decoration: none;
 }
 
@@ -705,13 +727,13 @@ line-height: 150px;
 }
 
 .btn-look-carefully_background {
-  background-color: #6699cc;
+  background-color: var(--clr-accent);
   font-family: "Montserrat", sans-serif;
   color: white;
 }
 
 .btn-look-carefully-background-bold {
-  background-color: #6699cc;
+  background-color: var(--clr-accent);
   font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: normal;
@@ -725,12 +747,12 @@ line-height: 150px;
 
 .styled-link {
   font-family: "Montserrat", sans-serif;
-  color: #6699cc;
+  color: var(--clr-accent);
 }
 
 .styled-link-bold {
   font-family: "Montserrat", sans-serif;
-  color: #6699cc;
+  color: var(--clr-accent);
   font-weight: bold;
 }
 
