@@ -124,7 +124,7 @@ a.active-footer {
 }
 
 .link-about:hover {
-  color: var(--cler-accent);
+  color: var(--clr-accent);
   text-decoration: none;
 }
 
