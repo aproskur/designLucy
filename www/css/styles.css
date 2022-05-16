@@ -16,6 +16,7 @@
   --clr-dark:  #000;
   --clr-light:  #fff;
   --clr-accent: #6699cc;
+  --clr-accent-7t: rgba(102, 153, 204, 0.7);
 }
 
 .body{
@@ -346,7 +347,7 @@ a.active-footer {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-accent-7t);
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
@@ -356,9 +357,10 @@ a.active-footer {
   background-color: #555;
 }
 
-@media (max-width: 650px) {
+@media (min-width: 650px) {
   #myBtn {
     right: 20px;
+    background-color: var(--clr-accent);
   }
 }
 
