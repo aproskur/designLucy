@@ -337,9 +337,30 @@ a.active-footer {
   color: #808080;
 }
 
+/*button for scroling up */
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--clr-accent);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
 
+#myBtn:hover {
+  background-color: #555;
+}
 
-
+@media (max-width: 650px) {
+  #myBtn {
+    right: 20px;
+  }
+}
 
 
 
