@@ -1,7 +1,7 @@
 
 
 //Кнопка для возвращения наврех
-const mybutton = document.getElementById("myBtn");
+const mybutton = document.getElementById("scrollBtn");
 // When the user scrolls down xxx px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
