@@ -343,7 +343,7 @@ a.active-footer {
 }
 
 /*button for scroling up */
-#myBtn {
+#scrollBtn {
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -355,14 +355,15 @@ a.active-footer {
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+  z-index: 1000;
 }
 
-#myBtn:hover {
+#scrollBtn:hover {
   background-color: #555;
 }
 
 @media (min-width: 650px) {
-  #myBtn {
+  #scrollBtn {
     right: 20px;
     background-color: var(--clr-accent);
   }
