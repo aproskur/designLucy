@@ -79,6 +79,14 @@ a.active-footer {
   font-weight: 700;
 }
 
+.contact-link {
+  color: #fff;
+}
+
+
+.contact-link:hover {
+  text-decoration: none;
+}
 
 .aboutme {
   font-family: "Montserrat", sans-serif;
