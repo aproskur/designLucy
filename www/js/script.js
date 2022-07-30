@@ -9,3 +9,12 @@ cards.forEach((card) => {
     modal_image.src = `${bigSrc}`;
   });
 });
+
+
+function functionClose() {
+     $('#i-modal').hide();
+     $("body").removeClass("modal-open");
+     $('div').remove(".modal-backdrop");
+     $('div').remove(".fade");
+     $('div').remove(".show");
+}
