@@ -11,10 +11,10 @@ cards.forEach((card) => {
 });
 
 
-function functionClose() {
-     $('#i-modal').hide();
-     $("body").removeClass("modal-open");
-     $('div').remove(".modal-backdrop");
-     $('div').remove(".fade");
-     $('div').remove(".show");
-}
+// function functionClose() {
+//      $('#i-modal').hide();
+//      $("body").removeClass("modal-open");
+//      $('div').remove(".modal-backdrop");
+//      $('div').remove(".fade");
+//      $('div').remove(".show");
+// }
