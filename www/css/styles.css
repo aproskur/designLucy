@@ -29,6 +29,33 @@
   padding-top: 50px;
 }
 
+
+/* MODAL images adjustemnet on illustration page */
+.modal-content {
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 1200px;
+  border: none;
+}
+
+.modal-dialog {
+  max-width: 1200px;
+}
+
+.card-img:hover {
+  cursor: pointer;
+}
+
+.card-columns {
+  column-break-inside: avoid;
+}
+
+.card {
+  -webkit-column-break-inside: avoid;
+page-break-inside: avoid;
+break-inside: avoid;
+}
+
+/* end of modal images adjustments" */
 .playfair {
   font-family: "Playfair display", sans-serif;
 }
