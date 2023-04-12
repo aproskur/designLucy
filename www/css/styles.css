@@ -872,6 +872,18 @@ font-size: 30px;
 text-align: justify;
 }
 
+.policy-text {
+  font-family: 'Montserrat', sans-serif;
+}
+.policy-heading {
+  font-size: 30px;
+}
+
+.policy-link {
+  font-size: 0.8em;
+  text-align: center;
+}
+
 @media only screen and (min-width: 350px) {
   
   .text-404 {
