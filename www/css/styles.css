@@ -885,6 +885,16 @@ text-align: justify;
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .policy-heading {
+    font-size: 18px;
+  }
+  .policy-breadcrumb {
+    font-size: 16px !important;
+  }
+
+}
+
 @media only screen and (min-width: 350px) {
   
   .text-404 {
