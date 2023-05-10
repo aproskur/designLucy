@@ -25,6 +25,15 @@
   padding-top: 50px;
 }
 
+.img-blog {
+  height: 500px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.adjust-img-top-left {
+  object-position: top left;
+}
 
 /* MODAL images adjustemnet on illustration page */
 .modal-content {
