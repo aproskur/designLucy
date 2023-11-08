@@ -143,9 +143,6 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <picture>
-
-            <source media="(orientation: landscape)" srcset="images/slider_1.avif" type="image/avif">
-            <source media="(orientation: landscape)" srcset="images/slider_1.webp" type="image/webp">
             <source media="(min-width: 871px)" srcset="images/slider_1.png">
             <source media="(min-width: 480px) and (max-width:870px)" srcset="images/slider_tablet/Exlibris.png">
             <source media="(min-width: 200px)" srcset="images/imagesM/slider_640-na-1136-px_logo.avif"
@@ -457,6 +454,11 @@
     crossorigin="anonymous"></script>
   <script src="js/navbar_offcanvas.js"></script>
   <script src="js/scrollup.js"></script>
+  <script>
+    if (navigator.userAgent.includes('Samsung XCover') && navigator.userAgent.includes('Firefox')) {
+      // Apply specific styles or images for the Samsung XCover device using Firefox
+    }
+  </script>
 
 
 
