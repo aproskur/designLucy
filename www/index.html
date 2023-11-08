@@ -143,42 +143,79 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <picture>
+            <!-- Landscape orientation images -->
+            <source media="(orientation: landscape)" srcset="images/slider_1.avif" type="image/avif">
+            <source media="(orientation: landscape)" srcset="images/slider_1.webp" type="image/webp">
+
+            <!-- Large screens (min-width: 871px) -->
             <source media="(min-width: 871px)" srcset="images/slider_1.png">
+
+            <!-- Tablet-sized screens (480px to 870px) -->
             <source media="(min-width: 480px) and (max-width: 870px)" srcset="images/slider_tablet/Exlibris.png">
+
+            <!-- Smaller screens (min-width: 320px) -->
             <source srcset="images/imagesM/slider_640-na-1136-px_logo.avif" type="image/avif">
             <source srcset="images/imagesM/slider_640-na-1136-px_logo.png">
+
+            <!-- Fallback images (if none of the conditions are met) -->
             <source srcset="images/slider_1.avif" type="image/avif">
             <source srcset="images/slider_1.webp" type="image/webp">
+
+            <!-- Default image for all other cases -->
             <img src="images/slider_1.png" class="d-block w-100 img-fluid viewport-height" alt="">
           </picture>
+
         </div>
         <div class="carousel-item">
           <picture>
+            <!-- Landscape orientation images -->
             <source media="(orientation: landscape)" srcset="images/slider_2.avif" type="image/avif">
             <source media="(orientation: landscape)" srcset="images/slider_2.webp" type="image/webp">
+
+            <!-- Large screens (min-width: 871px) -->
             <source media="(min-width: 871px)" srcset="images/slider_2.png">
-            <source media="(min-width: 480px) and (max-width:870px)" srcset="images/slider_tablet/TimkaToys.png">
-            <source media="(min-width: 200px)" srcset="images/imagesM/slider_640-na-1136-px_zaichik.avif"
+
+            <!-- Tablet-sized screens (480px to 870px) -->
+            <source media="(min-width: 480px) and (max-width: 870px)" srcset="images/slider_tablet/TimkaToys.png">
+
+            <!-- Smaller screens (min-width: 200px) -->
+            <source
+              srcset="images/imagesM/slider_640-na-1136-px_zaichik.avif, images/imagesM/slider_640-na-1136-px_zaichik.png"
               type="image/avif">
-            <source media="(min-width: 200px)" srcset="images/imagesM/slider_640-na-1136-px_zaichik.png">
+
+            <!-- Fallback images (if none of the conditions are met) -->
             <source srcset="images/slider_2.avif" type="image/avif">
             <source srcset="images/slider_2.webp" type="image/webp">
+
+            <!-- Default image for all other cases -->
             <img src="images/slider_2.jpg" class="d-block w-100 img-fluid viewport-height" alt="">
           </picture>
         </div>
         <div class="carousel-item">
           <picture>
+            <!-- Landscape orientation images -->
             <source media="(orientation: landscape)" srcset="images/slider_3.avif" type="image/avif">
             <source media="(orientation: landscape)" srcset="images/slider_3.webp" type="image/webp">
+
+            <!-- Large screens (min-width: 871px) -->
             <source media="(min-width: 871px)" srcset="images/slider_3.png">
-            <source media="(min-width: 480px) and (max-width:870px)" srcset="images/slider_tablet/Garant.png">
-            <source media="(min-width: 200px)" srcset="images/imagesM/slider_640-na-1136-px_garant.avif"
+
+            <!-- Tablet-sized screens (480px to 870px) -->
+            <source media="(min-width: 480px) and (max-width: 870px)" srcset="images/slider_tablet/Garant.png">
+
+            <!-- Smaller screens (min-width: 320px) -->
+            <source
+              srcset="images/imagesM/slider_640-na-1136-px_garant.avif, images/imagesM/slider_640-na-1136-px_garant.png"
               type="image/avif">
-            <source media="(min-width: 200px)" srcset="images/imagesM/slider_640-na-1136-px_garant.png">
+
+            <!-- Fallback images (if none of the conditions are met) -->
             <source srcset="images/slider_3.avif" type="image/avif">
             <source srcset="images/slider_3.webp" type="image/webp">
+
+            <!-- Default image for all other cases -->
             <img class="d-block w-100 img-fluid viewport-height" src="images/slider_3.png" alt="">
           </picture>
+
         </div>
         <div class="carousel-item">
           <picture>
@@ -208,17 +245,29 @@
         </div>
         <div class="carousel-item">
           <picture>
+            <!-- Landscape orientation images -->
             <source media="(orientation: landscape)" srcset="images/slider_5.avif" type="image/avif">
             <source media="(orientation: landscape)" srcset="images/slider_5.webp" type="image/webp">
+
+            <!-- Large screens (min-width: 871px) -->
             <source media="(min-width: 871px)" srcset="images/slider_5.png">
-            <source media="(min-width: 480px) and (max-width:870px)" srcset="images/slider_tablet/Prime-Estetic.png">
-            <source media="(min-width: 200px)" srcset="images/imagesM/slider_640-na-1136-px_PE_visitki.avif"
+
+            <!-- Tablet-sized screens (480px to 870px) -->
+            <source media="(min-width: 480px) and (max-width: 870px)" srcset="images/slider_tablet/Prime-Estetic.png">
+
+            <!-- Smaller screens (min-width: 320px) -->
+            <source
+              srcset="images/imagesM/slider_640-na-1136-px_PE_visitki.avif, images/imagesM/slider_640-na-1136-px_PE_visitki.png"
               type="image/avif">
-            <source media="(min-width: 200px)" srcset="images/imagesM/slider_640-na-1136-px_PE_visitki.png">
+
+            <!-- Fallback images (if none of the conditions are met) -->
             <source srcset="images/slider_5.avif" type="image/avif">
             <source srcset="images/slider_5.webp" type="image/webp">
+
+            <!-- Default image for all other cases -->
             <img class="d-block w-100 img-fluid viewport-height" src="images/slider_5.png" alt="">
           </picture>
+
         </div>
       </div>
       <a class="carousel-control-prev" href="#work_samples_carousel" role="button" data-slide="prev">
